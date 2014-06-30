@@ -1,0 +1,67 @@
+VERIS2STIX
+==========
+The veris2stix utility is written in Python and can be used to convert a VERIS
+record to a STIX document.  The code has been used to convert all VERIS records
+in the VERIS-community database (VCDB, available at https://github.com/vz-risk/VCDB).
+
+veris2stix can be used to convert one VERIS record, or a collection of VERIS
+records in a directory.
+
+DEPENDENCIES
+============
+* python-stix v1.1.1.x : https://pypi.python.org/pypi/stix
+* python-cybox v2.1.x.y: https://pypi.python.org/pypi/cybox
+* python-dateutil : https://labix.org/python-dateutil
+
+To install dependencies, we recommend you use `pip`:
+$ pip install stix # this installs python-cybox and python-dateutil
+
+HOW TO USE
+==========
+```
+usage: convert.py [-h] [--infile INFILE] [--indir INDIR] [--outdir OUTDIR]
+                  [--from-vcdb]
+
+VERIS-to-STIX Converter
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --infile INFILE  Path to input file
+  --indir INDIR    Path to directory containing input files
+  --outdir OUTDIR  Directory for exported STIX documents
+  --from-vcdb      The input documents are from VCDB (default: True)
+```
+
+An `--infile` or `--indir` argument must be passed in for the veris2stix utility
+to run.
+
+VCDB
+====
+Currently, veris2stix assumes that the VERIS records it is converting are from
+the VCDB.  A keyword argument of "vcdb" defaults to True when invoking the function
+"convert_file".  VERIS records from the VCDB contain useful information in their
+"plus" item, by informal convention, that is used when converting the VERIS record
+to a STIX document.  Since the "plus" item is defined by the VERIS schema to
+contain any arbitrary information, VERIS records not from the VCDB are unlikely
+contain consistent information that can be reliably used during the conversion.
+
+The files verisc-mapping.json and verisc-enum.json have been annotated to indicate
+the STIX mapping.  These files may contain out-of-date information, but in general
+should coincide with the mappings that were implemented.  When in doubt, the python
+code should be assumed to be correct.
+
+
+OUTPUT MESSAGES
+===============
+There are three levels of output messages:
+* [INFO] - General informational messages about the operation of the veris2stix
+           utility.
+* [WARN] - Warning messages about some VERIS item which is not handled, an
+           ambiguous mapping, etc.
+* [ERROR] - Error messages regarding missing required items in the VERIS record.
+
+
+KNOWN ISSUES
+============
+A few of the VERIS records contained in the VCDB have minor syntax errors, which
+cause veris2stix to produce a STIX document that cannot be verified.
