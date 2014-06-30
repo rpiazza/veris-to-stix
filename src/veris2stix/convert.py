@@ -371,9 +371,6 @@ def add_availability_item(availability_item, aa):
             warn("Only 1 AvailabilityLossType allowed - choosing first")
         if variety_item[0] == 'Other':
             pa.type_of_availability_loss = AvailabilityLossType('Unknown')
-        # spelling error - https://github.com/STIXProject/python-stix/issues/114
-        elif variety_item[0] == 'Degradation':
-            pa.type_of_availability_loss = AvailabilityLossType('Degredation')
         else:
             pa.type_of_availability_loss = AvailabilityLossType(variety_item[0])
     notes_item = availability_item.get('notes')
@@ -499,7 +496,7 @@ def add_asset_item(asset_item, attribute_item, incident):
             
 def add_campaign_item(campaign_id_item, pkg):
     campaign = Campaign()
-    campaign.names = campaign_id_item
+    campaign.names = VocabString(campaign_id_item)
     pkg.add_campaign(campaign)
 
 def add_confidence_item(confidence_item, incident):
