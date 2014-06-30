@@ -1,0 +1,87 @@
+Version 1.3
+===========
+N/A - in 1.2.1 already
+X - added to enumeration mapping
+
+Schema changes
+--------------
+
+ * Schema has been documented using ietf.org draft 4 specifications: http://tools.ietf.org/html/draft-fge-json-schema-validation-00
+ * Add new actor.internal.job_change field (see enumerations below)
+ * Changes asset.country to an array so that we can model assets that exist in multiple countries.
+ X * Changes victim.country to an array rather than a string.
+ X * Adds a discovery_notes field to describe the discovery in greater detail.
+ * Removes asset.management, asset.hosting, asset.ownership, and asset.accessibility 
+ * Added asset.governance. This is intended to capture interesting facts about the management of the asset but is not intended to be all-inclusive or apply to all assets. E.g. there would be no selection if a person was the affected asset.
+ * Removes the existing physical.vector enumeration and renames physical.location to physical.vector. Some of the values from the old physical.vector are now in physical.variety.
+ * Adds new attribute.confidentiality.data_victim (see enumerations below)
+ * Adds six character region array to actor.external, actor.partner, and victim.
+ N/A	*  Adds actor.external.name, an array of strings used to identify the actor such as 'Syrian Electronic Army' or 'Zero Cool'.
+ * Renames the related_incidents field to campaign_id
+
+Enumeration changes
+-------------------
+
+  N/A	* actor.motive: Added "Secondary"
+  N/A	* action.hacking.variety: Added "Pass-the-hash"
+  N/A	* attribute.integrity.variety: Added "Defacement"
+  N/A	* attribute.integrity.variety: Renamed "Misappropriation" to "Repurpose"
+  N/A	* attribute.confidentiality.data.variety: Added "Source code"
+  N/A	* attribute.confidentiality.data.variety: Added "Vitual Currency"
+  N/A	* asset.assets.variety: Added "S - Unknown" 
+  N/A 	* attribute.confidentiality.data.variety: Added "Digital certificate"
+  N/A	* action.misuse.variety: Renamed "Embezzlement" to "Possession abuse"
+  N/A	* action.physical.variety: Renamed "Sabotage" to "Destruction"
+  X		* malware.vector: Added "Software update"
+  X		* discovery_method: Renamed "Int - reported by user" to "Int - reported by employee"
+  X		* discovery_method: Renamed "Int - IT audit" to "Int - IT review"
+  X		* action.physical.variety: Added "Skimmer"
+  X		* asset.accessibility: Removed all enumerations
+  X		* asset.hosting: Removed all enumerations
+  X		* asset.management: Removed all enumerations
+  X		* asset.ownership: Removed all enumerations
+  * action.phyiscal.vector: Removed all enumerations
+  * action.physical.location: Renamed to action.physical.vector
+  N/A	* action.physical.vector: Added "Visitor privileges"
+  N/A	* action.physical.vector: Added "Uncontrolled location"
+  N/A	* action.physical.vector: Added "Privileged access"
+  N/A	* action.physical.variety: Added "Bypassed controls"
+  N/A	* action.physical.variety: Added "Disabled controls""
+  * attribute.confidentiality.data_victim: Added "Customer"
+  * attribute.confidentiality.data_victim: Added "Employee"
+  * attribute.confidentiality.data_victim: Added "Other"
+  * attribute.confidentiality.data_victim: Added "Partner"
+  * attribute.confidentiality.data_victim: Added "Patient"
+  * attribute.confidentiality.data_victim: Added "Student"
+  * attribute.confidentiality.data_victim: Added "Unknown"
+  * actor.internal.job_change: Added "Hired"
+  * actor.internal.job_change: Added "Promoted"
+  * actor.internal.job_change: Added "Lateral move"
+  * actor.internal.job_change: Added "Resigned"
+  * actor.internal.job_change: Added "Let go"
+  * actor.internal.job_change: Added "Demoted"
+  * actor.internal.job_change: Added "Passed over"
+  * actor.internal.job_change: Added "Unknown"
+  * actor.internal.job_change: Added "Other"
+  * actor.internal.job_change: Added "Reprimanded"
+  * actor.internal.job_change: Added "Job eval"
+  * actor.internal.job_change: Added "Personal issues"
+  N/A	* discovery_method: Removed "Ext - unrelated party"
+  N/A	*  discovery_method: Added "Prt - monitoring service"
+  N/A	*  discovery_method: Added "Prt - audit"
+  N/A	*  discovery_method: Added "Prt - antivirus"
+  N/A	*  discovery_method: Added "Prt - incident response"
+  N/A	*  discovery_method: Added "Prt - Unknown"
+  N/A	*  discovery_method: Added "Prt - Other"
+  N/A	*  discovery_method: Added "Ext - incident response"
+  N/A	*  discovery_method: Added "Ext - found documents"
+  N/A	*  discovery_method: Added "Ext - suspicious traffic"
+  N/A	*  discovery_method: Added "Ext - emergency response team"
+  N/A	*  discovery_method: Added "Int - data loss prevention"
+  N/A	*  discovery_method: Added "Int - infrastructure monitoring"
+  * asset.governance: Added "Personally owned"
+  * asset.governance: Added "3rd party owned"
+  * asset.governance: Added "3rd party managed"
+  * asset.governance: Added "3rd party hosted"
+  * asset.governance: Added "Internally isolated"
+  * asset.governance: Added "Unknown"

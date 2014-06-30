@@ -1,0 +1,1070 @@
+{
+  "action": {
+    "environmental": {
+      "variety": [
+        "Deterioration",
+        "Earthquake",
+        "EMI",
+        "ESD",
+        "Temperature",
+        "Fire",
+        "Flood",
+        "Hazmat",
+        "Humidity",
+        "Hurricane",
+        "Ice",
+        "Landslide",
+        "Lightning",
+        "Meteorite",
+        "Particulates",
+        "Pathogen",
+        "Power failure",
+        "Tornado",
+        "Tsunami",
+        "Vermin",
+        "Volcano",
+        "Leak",
+        "Wind",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "error": {
+      "variety": [
+        "Classification error",
+        "Data entry error",
+        "Disposal error",
+        "Gaffe",
+        "Loss",
+        "Maintenance error",
+        "Misconfiguration",
+        "Misdelivery",
+        "Misinformation",
+        "Omission",
+        "Physical accidents",
+        "Capacity shortage",
+        "Programming error",
+        "Publishing error",
+        "Malfunction",
+        "Unknown",
+        "Other"
+      ],
+      "vector": [
+        "Random error",
+        "Carelessness",
+        "Inadequate personnel",
+        "Inadequate processes",
+        "Inadequate technology",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "hacking": {
+      "variety": [
+  "Abuse of functionality",						CAPEC-210 - Abuse of Functionality
+        "Brute force",							CAPEC-112 - Brute Force
+        "Buffer overflow",						CAPEC-100 - Overflow Buffers
+        "Cache poisoning",						CAPEC-141 - Cache Poisoning
+        "Session prediction",					CAPEC-351 - Credential/Session Prediction
+        "CSRF",									CAPEC-342 - Cross-Site Request Forgery
+        "XSS",									CAPEC-86 - Embedding Script (XSS ) in HTTP Headers							
+        "Cryptanalysis",						CAPEC-97 - Cryptanalysis						
+        "DoS",
+        "Footprinting",							CAPEC-169 - Footprinting					
+        "Forced browsing",						CAPEC-87 - Forceful Browsing
+        "Format string attack",					CAPEC-135 - Format String Injection
+        "Fuzz testing",							CAPEC-28 - Fuzzing
+        "HTTP request smuggling",				CAPEC-33 - HTTP Request Smuggling
+        "HTTP request splitting",				CAPEC-105 - HTTP Request Splitting
+        "HTTP response smuggling",				CAPEC-273 - HTTP Response Smuggling
+        "HTTP Response Splitting",				CAPEC-34 - HTTP Response Splitting
+        "Integer overflows",					CAPEC-92 - Forced Integer Overflow
+        "LDAP injection",						CAPEC-136 - LDAP Injection
+        "Mail command injection",				CAPEC-183 - IMAP/SMTP Command Injection
+        "MitM",									CAPEC-94 - Man in the Middle Attack
+        "Null byte injection",					CAPEC-52 - Embedding NULL Bytes			
+        "Offline cracking",						CAPEC-49 - Password Brute Forcing				
+        "OS commanding",						CAPEC-364 - OS Commanding
+	 	"Pass-the-hash",
+        "Path traversal",						CAPEC-126 - Path Traversal
+        "RFI",									CAPEC-193 – PHP Remote File Inclusion
+        "Reverse engineering",					CAPEC-190 - Reverse Engineer an Executable to Expose Assumed Hidden Functionality or Content
+        "Routing detour",						CAPEC-365 - Routing Detour
+        "Session fixation",						CAPEC-61 - Session Fixation
+        "Session replay",						CAPEC-60 - Reusing Session IDs (aka Session Replay)
+        "Soap array abuse",						CAPEC-279 - Soap Manipulation
+        "Special element injection",
+        "SQLi",									CAPEC-66 - SQL Injection
+        "SSI injection",						CAPEC-101 - Server Side Include (SSI) Injection			
+        "URL redirector abuse",					CAPEC-371 - URL Redirector Abuse
+        "Use of backdoor or C2",
+        "Use of stolen creds",
+        "XML attribute blowup",					CAPEC-229 - XML Attribute Blowup
+        "XML entity expansion",					CAPEC-197 - XML Entity Expansion
+        "XML external entities",				CAPEC-221 - XML External Entities
+        "XML injection",						CAPEC-250 - XML Injection
+        "XPath injection",						CAPEC-83 - XPath Injection
+        "XQuery injection",						CAPEC-84 - XQuery Injection
+        "Virtual machine escape",
+        "Unknown",
+        "Other"
+
+      ],
+      "vector": [
+        "3rd party desktop",
+        "Backdoor or C2",
+        "Desktop sharing",
+        "Physical access",
+        "Command shell",
+        "Partner",
+        "VPN",
+        "Web application",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "malware": {
+      "variety": [									stixVocabs:MalwareTypeEnum-1.0															
+        "Adware",									Adware									
+        "Backdoor",									Remote Access Trojan
+        "Brute force",
+        "Capture app data",
+        "Capture stored data",
+        "Client-side attack",
+        "Click fraud",
+        "C2",
+        "Destroy data",
+        "Disable controls",
+        "DoS",
+        "Downloader",
+        "Exploit vuln",
+        "Export data",
+        "Packet sniffer",
+        "Password dumper",							Bot - Credential Theft
+        "Ram scraper",
+        "Ransomware",								Ransomware
+        "Rootkit",									Rootkit
+        "Scan network",
+        "Spam",										Bot - Spam
+        "Spyware/Keylogger",					
+        "SQL injection",
+        "Adminware",
+        "Worm",
+        "Unknown",
+        "Other"
+      ],
+      "vector": [
+        "Direct install",
+        "Download by malware",
+        "Email autoexecute",
+        "Email link",
+        "Email attachment",
+        "Instant messaging",
+        "Network propagation",
+        "Software Update",
+        "Remote injection",
+        "Removable media",
+        "Web drive-by",
+        "Web download",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "misuse": {
+      "variety": [
+        "Knowledge abuse",
+        "Privilege abuse",
+        "Possession abuse",
+        "Data mishandling",
+        "Email misuse",
+        "Net misuse",
+        "Illicit content",
+        "Unapproved workaround",
+        "Unapproved hardware",
+        "Unapproved software",
+        "Unknown",
+        "Other"
+      ],
+      "vector": [
+        "Physical access",
+        "LAN access",
+        "Remote access",
+        "Non-corporate",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "physical": {
+      "location": [
+        "Partner facility",
+        "Partner vehicle",
+        "Personal residence",
+        "Personal vehicle",
+        "Public facility",
+        "Public vehicle",
+        "Victim secure area",
+        "Victim work area",
+        "Victim public area",
+        "Victim grounds",
+        "Unknown",
+        "Other"
+      ],
+      "variety": [
+        "Assault",
+        "Destruction",
+        "Snooping",
+        "Surveillance",
+        "Tampering",
+        "Theft",
+        "Wiretapping",
+        "Connection",
+        "Skimmer",
+        "Unknown",
+        "Other"
+      ],
+      "vector": [
+        "Privileged access",
+        "Visitor privileges",
+        "Bypassed controls",
+        "Disabled controls",
+        "Uncontrolled location",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "social": {
+      "target": [
+        "Auditor",
+        "Call center",
+        "Cashier",
+        "Customer",
+        "End-user",
+        "Executive",
+        "Finance",
+        "Former employee",
+        "Helpdesk",
+        "Human resources",
+        "Maintenance",
+        "Manager",
+        "Partner",
+        "Guard",
+        "Developer",
+        "System admin",
+        "Unknown",
+        "Other"
+      ],
+      "variety": [
+        "Baiting",
+        "Bribery",
+        "Elicitation",
+        "Extortion",
+        "Forgery",
+        "Influence",
+        "Scam",
+        "Phishing",
+        "Pretexting",
+        "Propaganda",
+        "Spam",
+        "Unknown",
+        "Other"
+      ],
+      "vector": [
+        "Documents",
+        "Email",
+        "In-person",
+        "IM",
+        "Phone",
+        "Removable media",
+        "SMS",
+        "Social media",
+        "Software",
+        "Website",
+        "Unknown",
+        "Other"
+      ]
+    }
+  },
+  "actor": {
+    "external": {							
+      "variety": [
+        "Activist",							ThreatActorTypeEnum:Hacktivist
+        "Auditor",
+        "Competitor",						IntendedEffectVocab-1.0:Competitive Advantage
+        "Customer",							ThreatActorTypeEnum:Disgruntled Customer / User
+        "Force majeure",
+        "Former employee",
+        "Nation-state",
+        "Organized crime",					ThreatActorTypeEnum:eCrime Actor - Organized Crime Actor
+        "Acquaintance",
+        "State-affiliated",					ThreatActorTypeEnum:State Actor / Agency
+        "Terrorist",
+        "Unaffiliated",
+        "Unknown",
+        "Other"
+      ]
+    },
+    "internal": {							ThreatActorTypeEnum:Insider Threat
+      "variety": [
+        "Auditor",							AssetTypeEnum-1.0:Auditor
+        "Call center",						AssetTypeEnum-1.0:Call center
+        "Cashier",							AssetTypeEnum-1.0:Cashier
+        "End-user",							AssetTypeEnum-1.0:End-user
+        "Executive",						AssetTypeEnum-1.0:Executive
+        "Finance",							AssetTypeEnum-1.0:Finance
+        "Helpdesk",							AssetTypeEnum-1.0:Helpdesk
+        "Human resources",					AssetTypeEnum-1.0:Human resources
+        "Maintenance",						AssetTypeEnum-1.0:Maintenance
+        "Manager",							AssetTypeEnum-1.0:Maintenance
+        "Guard",							AssetTypeEnum-1.0:Guard
+        "Developer",						AssetTypeEnum-1.0:Developer
+        "System admin",						AssetTypeEnum-1.0:Administrator
+        "Unknown",
+        "Other"
+      ]
+    },
+    "motive": [								MotivationEnum-1.1
+      "NA",									?
+      "Espionage",							?
+      "Fear",								?
+      "Financial",							MotivationEnum-1.1:Financial or Economic
+      "Fun",								MotivationEnum-1.1:Ego
+      "Grudge",								MotivationEnum-1.1:Ego?
+      "Ideology",							MotivationEnum-1.1:Ideological
+      "Convenience",						MotivationEnum-1.1:Opportunistic
+      "Secondary",							?
+      "Unknown",							(omit?)
+      "Other"								?	
+    ]
+  },
+  "asset": {	
+    "accessibility": [								Not used in 1.3
+      "External",
+      "Internal",
+      "Isolated",
+      "Unknown",
+      "NA"
+    ],
+    "cloud": [
+      "Hypervisor",
+      "Partner application",
+      "Hosting governance",
+      "Customer attack",
+      "Hosting error",
+      "User breakout",
+      "Unknown",
+      "Other"
+    ],
+     "hosting": [									Not used in 1.3
+      "Internal",									LocationClassEnum-1.0:Internally-Located
+      "External shared",							LocationClassEnum-1.0:Externally-Located
+      "External dedicated",							LocationClassEnum-1.0:Externally-Located
+      "External",									LocationClassEnum-1.0:Externally-Located
+      "Unknown",									LocationClassEnum-1.0:Unknown
+      "NA"											?
+    ],
+    "management": [									Not used in 1.3
+      "Internal",									ManagementClassEnum-1.0:Internally-Managed							
+      "External",									ManagementClassEnum-1.0:Externally-Management
+      "Unknown",									ManagementClassEnum-1.0:Unknown
+      "NA"											(omit?)
+    ],
+    "ownership": [									Not used in 1.3
+      "Victim",										OwnershipClassEnum-1.0:Internally-Owned
+      "Employee",									OwnershipClassEnum-1.0:Employee-Owned
+      "Partner",									OwnershipClassEnum-1.0:Partner-Owned
+      "Customer",									OwnershipClassEnum-1.0:Customer-Owned
+      "Unknown",									OwnershipClassEnum-1.0:Unknown
+      "NA"											(omit?)
+    ],
+    "variety": [									AssetTypeEnum-1.0
+      "S - Authentication",							?
+      "S - Backup",									AssetTypeEnum-1.0:Backup
+      "S - Database",								AssetTypeEnum-1.0:Database
+      "S - DHCP",									AssetTypeEnum-1.0:DHCP
+      "S - Directory",								AssetTypeEnum-1.0:Directory
+      "S - DCS",									AssetTypeEnum-1.0:DCS
+      "S - DNS",									AssetTypeEnum-1.0:DNS
+      "S - File",									AssetTypeEnum-1.0:File
+      "S - Log",									AssetTypeEnum-1.0:Log
+      "S - Mail",									AssetTypeEnum-1.0:Mail
+      "S - Mainframe",								AssetTypeEnum-1.0:Mainframe
+      "S - Payment switch",							AssetTypeEnum-1.0:Payment switch
+      "S - POS controller",							AssetTypeEnum-1.0:POS controller
+      "S - Print",									AssetTypeEnum-1.0:Print
+      "S - Proxy",									AssetTypeEnum-1.0:Proxy
+      "S - Remote access",							AssetTypeEnum-1.0:Remote access
+      "S - SCADA",									AssetTypeEnum-1.0:SCADA
+      "S - Web application",						AssetTypeEnum-1.0:Web application
+      "S - Code repository",						?
+      "S - VM host",								?
+      "S - Other",									AssetTypeEnum-1.0:Server
+      "S - Unknown",								AssetTypeEnum-1.0:Server
+      "N - Access reader",							AssetTypeEnum-1.0:Access reader
+      "N - Camera",									AssetTypeEnum-1.0:Camera
+      "N - Firewall",								AssetTypeEnum-1.0:Firewall
+      "N - HSM",									AssetTypeEnum-1.0:HSM
+      "N - IDS",									AssetTypeEnum-1.0:IDS
+      "N - Broadband",								AssetTypeEnum-1.0:Broadband
+      "N - PBX",									AssetTypeEnum-1.0:PBX
+      "N - Private WAN",							AssetTypeEnum-1.0:Private WAN
+      "N - PLC",									AssetTypeEnum-1.0:PLC
+      "N - Public WAN",								AssetTypeEnum-1.0:Public WAN
+      "N - RTU",									AssetTypeEnum-1.0:RTU
+      "N - Router or switch",						AssetTypeEnum-1.0:Router or switch
+      "N - SAN",									AssetTypeEnum-1.0:SAN
+      "N - Telephone",								AssetTypeEnum-1.0:Telephone
+      "N - VoIP adapter",							AssetTypeEnum-1.0:VoIP adapter
+      "N - LAN",									AssetTypeEnum-1.0:LAN
+      "N - WLAN",									AssetTypeEnum-1.0:WLAN
+      "N - Other",									AssetTypeEnum-1.0:Network
+      "U - Auth token",								AssetTypeEnum-1.0:Auth token
+      "U - Desktop",								AssetTypeEnum-1.0:Desktop
+      "U - Laptop",									AssetTypeEnum-1.0:Laptop
+      "U - Media",									AssetTypeEnum-1.0:Media
+      "U - Mobile phone",							AssetTypeEnum-1.0:Mobile phone
+      "U - Peripheral",								AssetTypeEnum-1.0:Peripheral
+      "U - POS terminal",							AssetTypeEnum-1.0:POS terminal
+      "U - Tablet",									AssetTypeEnum-1.0:Tablet
+      "U - Telephone",								AssetTypeEnum-1.0:Telephone
+      "U - VoIP phone",								AssetTypeEnum-1.0:VoIP phone
+      "U - Other",									AssetTypeEnum-1.0:User Device
+      "T - ATM",									AssetTypeEnum-1.0:ATM
+      "T - PED pad",								?
+      "T - Gas terminal",							AssetTypeEnum-1.0:Gas terminal
+      "T - Kiosk",									AssetTypeEnum-1.0:Kiosk
+      "T - Other",									?
+      "M - Tapes",									AssetTypeEnum-1.0:Tapes
+      "M - Disk media",								AssetTypeEnum-1.0:Disk media
+      "M - Documents",								AssetTypeEnum-1.0:Documents
+      "M - Flash drive",							AssetTypeEnum-1.0:Flash drive
+      "M - Disk drive",								AssetTypeEnum-1.0:Disk drive
+      "M - Smart card",								AssetTypeEnum-1.0:Smart card
+      "M - Payment card",							AssetTypeEnum-1.0:Payment card
+      "M - Other",									AssetTypeEnum-1.0:Media
+      "P - System admin",							AssetTypeEnum-1.0:Administrator
+      "P - Auditor",								AssetTypeEnum-1.0:Auditor
+      "P - Call center",							AssetTypeEnum-1.0:Call center
+      "P - Cashier",								AssetTypeEnum-1.0:Cashier
+      "P - Customer",								AssetTypeEnum-1.0:Customer
+      "P - Developer",								AssetTypeEnum-1.0:Developer
+      "P - End-user",								AssetTypeEnum-1.0:End-user
+      "P - Executive",								AssetTypeEnum-1.0:Executive
+      "P - Finance",								AssetTypeEnum-1.0:Finance
+      "P - Former employee",						AssetTypeEnum-1.0:Former employee
+      "P - Guard",									AssetTypeEnum-1.0:Guard
+      "P - Helpdesk",								AssetTypeEnum-1.0:Helpdesk
+      "P - Human resources",						AssetTypeEnum-1.0:Human resources
+      "P - Maintenance",							AssetTypeEnum-1.0:Maintenance
+      "P - Manager",								AssetTypeEnum-1.0:Manager
+      "P - Partner",								AssetTypeEnum-1.0:Partner
+      "P - Other",									AssetTypeEnum-1.0:Person
+      "Unknown"										AssetTypeEnum-1.0:Unknown
+    ]
+  },
+  "attribute": {
+    "availability": {								
+      "variety": [									AvailabilityLossTypeEnum-1.0
+        "Destruction",								AvailabilityLossTypeEnum-1.0:Destruction
+        "Loss",										AvailabilityLossTypeEnum-1.0:Loss
+        "Interruption",								AvailabilityLossTypeEnum-1.0:Interruption
+        "Degradation",								AvailabilityLossTypeEnum-1.0:Degradation
+        "Acceleration",								AvailabilityLossTypeEnum-1.0:Acceleration
+        "Obscuration",								AvailabilityLossTypeEnum-1.0:Obscuration
+        "Unknown",									AvailabilityLossTypeEnum-1.0:Unknown
+        "Other"										AvailabilityLossTypeEnum-1.0:Unknown
+      ]
+    },
+    "confidentiality": {
+      "data": {
+        "variety": [
+          "Credentials",
+          "Bank",
+          "Classified",
+          "Copyrighted",
+	  	  "Digital certificate",
+          "Medical",
+          "Payment",
+          "Personal",
+          "Internal",
+	      "Source code",
+          "System",
+          "Secrets",
+	      "Virtual currency",
+          "Unknown",
+          "Other"
+        ]
+      },
+      "data_disclosure": [							
+        "Yes",										
+        "Potentially",												
+        "No",										
+        "Unknown"
+      ],
+      "state": [
+        "Stored",										
+        "Stored encrypted",
+        "Stored unencrypted",
+        "Transmitted",
+        "Transmitted encrypted",
+        "Transmitted unencrypted",
+        "Processed",
+        "Unknown"
+      ]
+    },
+    "integrity": {
+      "variety": [
+        "Created account",
+        "Defacement",
+        "Hardware tampering",
+        "Alter behavior",
+        "Fraudulent transaction",
+        "Log tampering",
+        "Repurpose",
+        "Misrepresentation",
+        "Modify configuration",
+        "Modify privileges",
+        "Modify data",
+        "Software installation",
+        "Unknown",
+        "Other"
+      ]
+    }
+  },
+  "confidence": [									HighMediumLowEnum-1.0
+    "High",											HighMediumLowEnum-1.0:High
+    "Medium",										HighMediumLowEnum-1.0:Medium
+    "Low",											HighMediumLowEnum-1.0:Low
+    "None"											HighMediumLowEnum-1.0:None
+  ],
+  "cost_corrective_action": [						HighMediumLowEnum-1.0				
+    "Simple and cheap",								HighMediumLowEnum-1.0:Low
+    "Difficult and expensive",						HighMediumLowEnum-1.0:High
+    "Something in-between",							HighMediumLowEnum-1.0:Medium
+    "Unknown"										HighMediumLowEnum-1.0:Unknown)  - in python-stix
+  ],
+  "country": [
+    "AD",
+    "AE",
+    "AF",
+    "AG",
+    "AI",
+    "AL",
+    "AM",
+    "AO",
+    "AQ",
+    "AR",
+    "AS",
+    "AT",
+    "AU",
+    "AW",
+    "AX",
+    "AZ",
+    "BA",
+    "BB",
+    "BD",
+    "BE",
+    "BF",
+    "BG",
+    "BH",
+    "BI",
+    "BJ",
+    "BL",
+    "BM",
+    "BN",
+    "BO",
+    "BQ",
+    "BR",
+    "BS",
+    "BT",
+    "BV",
+    "BW",
+    "BY",
+    "BZ",
+    "CA",
+    "CC",
+    "CD",
+    "CF",
+    "CG",
+    "CH",
+    "CI",
+    "CK",
+    "CL",
+    "CM",
+    "CN",
+    "CO",
+    "CR",
+    "CU",
+    "CV",
+    "CW",
+    "CX",
+    "CY",
+    "CZ",
+    "DE",
+    "DJ",
+    "DK",
+    "DM",
+    "DO",
+    "DZ",
+    "EC",
+    "EE",
+    "EG",
+    "EH",
+    "ER",
+    "ES",
+    "ET",
+    "FI",
+    "FJ",
+    "FK",
+    "FM",
+    "FO",
+    "FR",
+    "GA",
+    "GB",
+    "GD",
+    "GE",
+    "GF",
+    "GG",
+    "GH",
+    "GI",
+    "GL",
+    "GM",
+    "GN",
+    "GP",
+    "GQ",
+    "GR",
+    "GS",
+    "GT",
+    "GU",
+    "GW",
+    "GY",
+    "HK",
+    "HM",
+    "HN",
+    "HR",
+    "HT",
+    "HU",
+    "ID",
+    "IE",
+    "IL",
+    "IM",
+    "IN",
+    "IO",
+    "IQ",
+    "IR",
+    "IS",
+    "IT",
+    "JE",
+    "JM",
+    "JO",
+    "JP",
+    "KE",
+    "KG",
+    "KH",
+    "KI",
+    "KM",
+    "KN",
+    "KP",
+    "KR",
+    "KW",
+    "KY",
+    "KZ",
+    "LA",
+    "LB",
+    "LC",
+    "LI",
+    "LK",
+    "LR",
+    "LS",
+    "LT",
+    "LU",
+    "LV",
+    "LY",
+    "MA",
+    "MC",
+    "MD",
+    "ME",
+    "MF",
+    "MG",
+    "MH",
+    "MK",
+    "ML",
+    "MM",
+    "MN",
+    "MO",
+    "MP",
+    "MQ",
+    "MR",
+    "MS",
+    "MT",
+    "MU",
+    "MV",
+    "MW",
+    "MX",
+    "MY",
+    "MZ",
+    "NA",
+    "NC",
+    "NE",
+    "NF",
+    "NG",
+    "NI",
+    "NL",
+    "NO",
+    "NP",
+    "NR",
+    "NU",
+    "NZ",
+    "OM",
+    "Other",
+    "PA",
+    "PE",
+    "PF",
+    "PG",
+    "PH",
+    "PK",
+    "PL",
+    "PM",
+    "PN",
+    "PR",
+    "PS",
+    "PT",
+    "PW",
+    "PY",
+    "QA",
+    "RE",
+    "RO",
+    "RS",
+    "RU",
+    "RW",
+    "SA",
+    "SB",
+    "SC",
+    "SD",
+    "SE",
+    "SG",
+    "SH",
+    "SI",
+    "SJ",
+    "SK",
+    "SL",
+    "SM",
+    "SN",
+    "SO",
+    "SR",
+    "SS",
+    "ST",
+    "SV",
+    "SX",
+    "SY",
+    "SZ",
+    "TC",
+    "TD",
+    "TF",
+    "TG",
+    "TH",
+    "TJ",
+    "TK",
+    "TL",
+    "TM",
+    "TN",
+    "TO",
+    "TR",
+    "TT",
+    "TV",
+    "TW",
+    "TZ",
+    "UA",
+    "UG",
+    "UM",
+    "US",
+    "UY",
+    "UZ",
+    "Unknown",
+    "VA",
+    "VC",
+    "VE",
+    "VG",
+    "VI",
+    "VN",
+    "VU",
+    "WF",
+    "WS",
+    "YE",
+    "YT",
+    "ZA",
+    "ZM",
+    "ZW"
+  ],
+  "discovery_method": [								DiscoveryMethodEnum-1.0	
+  	"Prt - monitoring service",
+  	"Prt - audit",
+  	"Prt - antivirus",
+  	"Prt - incident response",
+  	"Prt - Unknown",
+  	"Prt - Other",
+  	
+  	"Ext - incident response",
+  	"Ext - found documents",
+  	"Ext - suspicious traffic",
+  	"Ext - emergency response team",
+  			
+    "Ext - actor disclosure",						DiscoveryMethodEnum-1.0:Agent Disclosure
+    "Ext - fraud detection",						DiscoveryMethodEnum-1.0:Fraud Detection
+    "Ext - monitoring service",						DiscoveryMethodEnum-1.0:Monitoring Service
+    "Ext - customer",								DiscoveryMethodEnum-1.0:Customer
+    not in 1.3 "Ext - unrelated party",						DiscoveryMethodEnum-1.0:Unrelated Party
+    "Ext - audit",									DiscoveryMethodEnum-1.0:Audit
+    "Ext - unknown",								DiscoveryMethodEnum-1.0:Unknown
+    "Int - antivirus",								DiscoveryMethodEnum-1.0:Antivirus
+    "Int - incident response",						DiscoveryMethodEnum-1.0:Incident Response
+    "Int - financial audit",						DiscoveryMethodEnum-1.0:Financial Audit
+    "Int - fraud detection",						DiscoveryMethodEnum-1.0:Fraud Detection
+    "Int - HIDS",									DiscoveryMethodEnum-1.0:HIPS
+    "Int - IT review",								???? DiscoveryMethodEnum-1.0:IT Audit
+    "Int - log review",								DiscoveryMethodEnum-1.0:Log Review
+    "Int - NIDS",									DiscoveryMethodEnum-1.0:NIDS
+    "Ext - law enforcement",						DiscoveryMethodEnum-1.0:Law Enforcement
+    "Int - security alarm",							DiscoveryMethodEnum-1.0:Security Alarm
+    "Int - reported by employee",					no longer - DiscoveryMethodEnum-1.0:User
+    "Int - data loss prevention",
+  	"Int - infrastructure monitoring",	
+    "Int - unknown",								DiscoveryMethodEnum-1.0:Unknown
+    "Unknown",										DiscoveryMethodEnum-1.0:Unknown
+    "Other"											DiscoveryMethodEnum-1.0:Unknown
+  ],
+  "impact": {
+    "loss": {
+      "rating": [									ImpactRatingVocab-1.0
+        "Major",									ImpactRatingVocab-1.0:Major
+        "Moderate",									ImpactRatingVocab-1.0:Moderate
+        "Minor",									ImpactRatingVocab-1.0:Minor
+        "None",										ImpactRatingVocab-1.0:None
+        "Unknown"									ImpactRatingVocab-1.0:Unknown
+      ],
+      "variety": [									IncidentEffectEnum-1.0
+        "Asset and fraud",							?
+        "Brand damage",								Brand or Image Degradation
+        "Business disruption",						Disruption of Service / Operations
+        "Operating costs",							Financial Loss
+        "Legal and regulatory",						Regulatory, Compliance or Legal Impact
+        "Competitive advantage",					Loss of Competitive advantage
+        "Response and recovery"						?
+      ]
+    },
+    "overall_rating": [								ImpactQualificationVocab-1.0
+      "Insignificant",								ImpactQualificationVocab-1.0:Insignificant
+      "Distracting",								ImpactQualificationVocab-1.0:Distracting
+      "Painful",									ImpactQualificationVocab-1.0:Painful
+      "Damaging",									ImpactQualificationVocab-1.0:Damaging
+      "Catastrophic",								ImpactQualificationVocab-1.0:Catastrophic
+      "Unknown"										ImpactQualificationVocab-1.0:Unknown
+    ]
+  },
+  "iso_currency_code": [
+    "AED",
+    "AFN",
+    "ALL",
+    "AMD",
+    "ANG",
+    "AOA",
+    "ARS",
+    "AUD",
+    "AWG",
+    "AZN",
+    "BAM",
+    "BBD",
+    "BDT",
+    "BGN",
+    "BHD",
+    "BIF",
+    "BMD",
+    "BND",
+    "BOB",
+    "BRL",
+    "BSD",
+    "BTN",
+    "BWP",
+    "BYR",
+    "BZD",
+    "CAD",
+    "CDF",
+    "CHF",
+    "CLP",
+    "CNY",
+    "COP",
+    "CRC",
+    "CUC",
+    "CUP",
+    "CVE",
+    "CZK",
+    "DJF",
+    "DKK",
+    "DOP",
+    "DZD",
+    "EGP",
+    "ERN",
+    "ETB",
+    "EUR",
+    "FJD",
+    "FKP",
+    "GBP",
+    "GEL",
+    "GGP",
+    "GHS",
+    "GIP",
+    "GMD",
+    "GNF",
+    "GTQ",
+    "GYD",
+    "HKD",
+    "HNL",
+    "HRK",
+    "HTG",
+    "HUF",
+    "IDR",
+    "ILS",
+    "IMP",
+    "INR",
+    "IQD",
+    "IRR",
+    "ISK",
+    "JEP",
+    "JMD",
+    "JOD",
+    "JPY",
+    "KES",
+    "KGS",
+    "KHR",
+    "KMF",
+    "KPW",
+    "KRW",
+    "KWD",
+    "KYD",
+    "KZT",
+    "LAK",
+    "LBP",
+    "LKR",
+    "LRD",
+    "LSL",
+    "LTL",
+    "LVL",
+    "LYD",
+    "MAD",
+    "MDL",
+    "MGA",
+    "MKD",
+    "MMK",
+    "MNT",
+    "MOP",
+    "MRO",
+    "MUR",
+    "MVR",
+    "MWK",
+    "MXN",
+    "MYR",
+    "MZN",
+    "NAD",
+    "NGN",
+    "NIO",
+    "NOK",
+    "NPR",
+    "NZD",
+    "OMR",
+    "PAB",
+    "PEN",
+    "PGK",
+    "PHP",
+    "PKR",
+    "PLN",
+    "PYG",
+    "QAR",
+    "RON",
+    "RSD",
+    "RUB",
+    "RWF",
+    "SAR",
+    "SBD",
+    "SCR",
+    "SDG",
+    "SEK",
+    "SGD",
+    "SHP",
+    "SLL",
+    "SOS",
+    "SPL",
+    "SRD",
+    "STD",
+    "SVC",
+    "SYP",
+    "SZL",
+    "THB",
+    "TJS",
+    "TMT",
+    "TND",
+    "TOP",
+    "TRY",
+    "TTD",
+    "TVD",
+    "TWD",
+    "TZS",
+    "UAH",
+    "UGX",
+    "USD",
+    "UYU",
+    "UZS",
+    "VEF",
+    "VND",
+    "VUV",
+    "WST",
+    "XAF",
+    "XCD",
+    "XDR",
+    "XOF",
+    "XPF",
+    "YER",
+    "ZAR",
+    "ZMK",
+    "ZWD"
+  ],
+  "security_incident": [
+    "Confirmed",									SecurityCompromiseEnum-1.0:Yes
+    "Suspected",									SecurityCompromiseEnum-1.0:Suspected
+    "False positive",								(not really "No")
+    "Near miss"										?
+  ],
+  "targeted": [
+    "Opportunistic",
+    "Targeted",
+    "Unknown",
+    "NA"
+  ],
+  "timeline": {
+    "unit": [
+      "NA",
+      "Seconds",
+      "Minutes",
+      "Hours",
+      "Days",
+      "Weeks",
+      "Months",
+      "Years",
+      "Never",
+      "Unknown"
+    ]
+  },
+  "victim": {
+    "employee_count": [								(just use enum text)
+      "1 to 10",
+      "11 to 100",
+      "101 to 1000",
+      "Small",
+      "Large",
+      "1001 to 10000",
+      "10001 to 25000",
+      "25001 to 50000",
+      "50001 to 100000",
+      "Over 100000",
+      "Unknown"
+    ]
+  }
+}

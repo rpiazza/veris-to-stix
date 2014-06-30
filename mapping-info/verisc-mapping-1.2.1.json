@@ -1,0 +1,686 @@
+{
+  "description": "VERIS Community Schema 1.2.1",
+  "properties": {
+    "action": {												TTPs (one for each sub item)
+      "properties": {
+        "environmental": {									NONE
+          "properties": {
+            "notes": {										
+              "type": "string"
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "error": {											NONE							
+          "properties": {
+            "notes": {
+              "type": "string"							
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"						
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"						
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "hacking": {										TTP/Behavior/AttackPatterns/
+          "properties": {
+            "cve": {
+              "type": "string"								TTP/ExploitTargets, et:Vulnerability/et:CVE_ID
+            },
+            "notes": {
+              "type": "string"								AttackPattern/Description
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"							AttackPattern@capec_id, AttackPattern/Title
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"					
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "malware": {										ttp:Malware
+          "properties": {
+            "cve": {										TTP/ExploitTargets, et:Vulnerability/et:CVE_ID
+              "type": "string"
+            },
+            "name": {										ttp/Malware/Name
+              "type": "string"
+            },
+            "notes": {										ttp/Malware/Description
+              "type": "string"
+            },
+            "variety": {
+              "items": {									ttp/Malware/Type
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "misuse": {											TTP/Behavior/
+          "properties": {
+            "notes": {
+              "type": "string"							
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"						
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"						
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "physical": {
+          "properties": {
+            "location": {								Incident/
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "social": {										ttp:Attack_Patterns?
+          "properties": {
+            "notes": {
+              "type": "string"
+            },
+            "target": {									Incident/Victim/Identity/Roles
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "variety": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "vector": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "unknown": {									
+          "properties": {
+            "notes": {
+              "type": "string"							TTP/Title
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": true,
+      "type": "object"
+    },
+    "actor": {											Threat_Actor for each, if more than one is specified
+      "properties": {
+        "external": {
+          "properties": {
+            "country": {								ta:Identity/stixCIQIdentity:Specification/ciq:Address/Country
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "motive": {									ta:Motivation
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "notes": {									ta:Description
+              "type": "string"
+            },
+            "variety": {								ta:Type/stixCommon:Value
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "internal": {									
+          "properties": {
+            "motive": {
+              "items": {								ta:Motivation
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "notes": {
+              "type": "string"							ta:Description
+            },
+            "variety": {
+              "items": {								ta:Type/stixCommon:Value
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "partner": {									ta:Associated_Actor
+          "properties": {
+            "country": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "industry": {
+              "type": "string"
+            },
+            "motive": {
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "unknown": {
+          "properties": {
+            "notes": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": true,
+      "type": "object"
+    },
+    "asset": {
+      "properties": {
+        "accessibility": {
+          "type": "string"
+        },
+        "assets": {
+          "items": {
+            "properties": {
+              "amount": {
+                "type": "integer"
+              },
+              "variety": {
+                "required": true,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "cloud": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "hosting": {									incident:Affected_Asset/incident:Location_Class
+          "type": "string"
+        },
+        "management": {									incident:Affected_Asset/incident:Management_Class
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "ownership": {									incident:Affected_Asset/incident:Ownership_Class
+          "type": "string"
+        }
+      },
+      "required": true,
+      "type": "object"
+    },
+    "attribute": {
+      "properties": {
+        "availability": {								incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected
+          "properties": {
+            "duration": {
+              "properties": {
+                "unit": {
+                  "required": true,
+                  "type": "string"
+                },
+                "value": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "notes": {									incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect									
+              "type": "string"
+            },
+            "variety": {								incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect						
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "confidentiality": {							incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected
+          "properties": {
+            "data": {
+              "items": {
+                "properties": {							incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect
+                  "amount": {
+                    "type": "integer"
+                  },
+                  "variety": {
+                    "required": true,
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "data_disclosure": {
+              "required": true,
+              "type": "string"
+            },
+            "data_total": {
+              "type": "integer"
+            },
+            "notes": {									incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect
+              "type": "string"
+            },
+            "state": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "integrity": {								incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected
+          "properties": {
+            "notes": {								incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect
+              "type": "string"
+            },
+            "variety": {							incident:Affected_Asset/incident:Nature_Of_Security_Effect/
+																				incident:Property_Affected/incident:Description_Of_Effect
+              "items": {
+                "required": true,
+                "type": "string"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "confidence": {									incidence:Confidence
+      "type": "string"
+    },
+    "control_failure": {
+      "type": "string"
+    },
+    "corrective_action": {							coa
+      "type": "string"
+    },
+    "cost_corrective_action": {						coa:cost
+      "type": "string"
+    },
+    "discovery_method": {							incident:Discovery_Method						
+      "required": true,
+      "type": "string"
+    },
+    "impact": {
+      "properties": {
+        "iso_currency_code": {
+          "type": "string"							incident:Impact_Assessment/incident:Total_Loss_Estimation/incident:Actual_Total_Loss_Estimation@iso_currency_code
+        },
+        "loss": {
+          "items": {
+            "properties": {
+              "amount": {							
+                "type": "number"
+              },
+              "max_amount": {
+                "type": "number"
+              },
+              "min_amount": {
+                "type": "number"
+              },
+              "rating": {							incident:Impact_Assessment/incident:Direct_Impact_Summary/
+														 incident:Business-Mission_Disruption
+                "type": "string"
+              },
+              "variety": {							incident:Impact_Assessment/incident:Effects
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "notes": {									incident:Impact_Assessment/						
+          "type": "string"
+        },
+        "overall_amount": {							incident:Impact_Assessment/incident:Total_Loss_Estimation/incident:Actual_Total_Loss_Estimation@amount
+          "type": "number"
+        },
+        "overall_max_amount": {
+          "type": "number"
+        },
+        "overall_min_amount": {
+          "type": "number"
+        },
+        "overall_rating": {							incident:Impact_Assessment/incident:Impact_Qualification
+          "required": true,
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "incident_id": {								incident:External_ID@source="VERIS"
+      "required": true,
+      "type": "string"
+    },
+    "ioc": {										indicator (no examples in VERIS json files)
+      "items": {
+        "properties": {
+          "comment": {
+            "type": "string"
+          },
+          "indicator": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "notes": {										
+      "type": "string"
+    },
+    "plus": {
+      "type": "any"
+		(some items from an example)															
+		"analyst": "kthompson", 												incident:Reporter
+		"analyst_notes": "Compiled from public and private info from source", 	?
+		"created": "2014-02-17T20:39:14Z", 										stix:STIX_Package@timestamp
+		"dbir_year": 2014, 														?
+		"master_id": "3EB8913E-FF7C-49FC-AC39-F801262B3247", 
+		"modified": "2014-02-17T20:39:14Z"										incident:incident@timestamp
+    },
+    "reference": {									incident:Information_Source/stixCommon:Reference
+      "type": "string"
+    },
+    "related_incidents": {							incident:Related_Incident@idref
+      "type": "string"
+    },
+    "schema_version": {								incident/InformationSource/Tool/Version
+      "required": true,								Tool/Name - VERIS schema, Tool/Vendor - Verizon
+      "type": "string"
+    },
+    "security_incident": {							incident:Security_Compromise
+      "required": true,
+      "type": "string"
+    },
+    "source_id": {									incident/InformationSource
+      "type": "string"								incident/InformationSource/identity - (always VCDB)
+    },												Tool/Name - veris2stix, Tool/Version - 0.1, Tool/Vendor - MITRE
+    "summary": {									incident:Title
+      "type": "string"
+    },
+    "targeted": {
+      "type": "string"
+    },
+    "timeline": {									incident:Time
+      "properties": {
+        "compromise": {								incident:Time/incident:First_Malicious_Action
+          "properties": {
+            "unit": {
+              "required": true,
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "containment": {							 incident:Time/incident:Containment_Achieved
+          "properties": {
+            "unit": {
+              "required": true,
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "discovery": {								incident:Time/incident:Incident_Discovery
+          "properties": {
+            "unit": {
+              "required": true,
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "exfiltration": {							incident:Time/incident:First_Data_Exfiltration
+          "properties": {
+            "unit": {
+              "required": true,
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "incident": {								 incident:Time/incident:Initial_Compromise
+          "properties": {
+            "day": {
+              "type": "integer"
+            },
+            "month": {
+              "type": "integer"
+            },
+            "time": {
+              "type": "string"
+            },
+            "year": {
+              "required": true,
+              "type": "integer"
+            }
+          },
+          "required": true,
+          "type": "object"
+        }
+      },
+      "required": true,
+      "type": "object"
+    },
+    "victim": {									incident:Victim
+      "properties": {
+        "country": {							incident:Victim/stixCIQIdentity:Specification/ciq:Address/Country
+          "required": true,
+          "type": "string"
+        },
+        "employee_count": {						incident:Victim/stixCIQIdentity:Specification/ciq:OrganisationInfo ciq:NumberOfEmployees
+          "required": true,
+          "type": "string"
+        },
+        "industry": {							incident:Victim/stixCIQIdentity:Specification/ciq:OrganisationInfo ciq:IndustryCode
+          "required": true,
+          "type": "string"
+        },
+        "locations_affected": {
+          "type": "integer"
+        },
+        "notes": {								NONE
+          "type": "string"
+        },
+        "revenue": {							incident:Victim/stixCIQIdentity:Specification/ciq:OrganisationDetails/ciq:Revenues						
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "iso_currency_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "secondary": {							
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "victim_id": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "state": {
+          "type": "string"
+        },
+        "victim_id": {							incident:Victim/stixCIQIdentity:Specification/cig:PartyName@ciq:PartyNameID			
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}
