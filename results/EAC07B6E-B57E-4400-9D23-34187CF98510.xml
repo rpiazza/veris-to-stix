@@ -13,22 +13,22 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-ccb685ac-393a-44cc-ac13-b9be854c12ad" version="1.1" timestamp="2013-04-12T22:29:56+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-5ba5bae8-8a09-4b6a-b900-ec7e42ac2890" version="1.1.1" timestamp="2013-04-12T22:29:56+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-22bdc389-fa66-4769-bb06-4e0f6d04798b" timestamp="2014-04-27T19:37:03+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-d0d579e1-e617-49f6-bddb-f08eff73b596" timestamp="2014-04-27T19:37:03+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:External_ID source="VERIS">EAC07B6E-B57E-4400-9D23-34187CF98510</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2011-08-08T00:00:00</incident:Initial_Compromise>
             </incident:Time>
-            <incident:Victim id="example:Identity-a9037de1-e8d8-4471-8149-5966171b6604" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-09348ba6-615c-4288-bc5b-90d4db72c31d" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Henry Ford Health System</xnl:NameLine>
@@ -55,7 +55,7 @@
                         </incident:Property_Affected>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Loss</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Loss</incident:Type_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
                 </incident:Affected_Asset>
@@ -65,13 +65,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-3552a96e-c85e-46c6-8057-072b0cf8f20a" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-fc0f4ecd-930a-4666-9209-1126e21d5a10" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-d80e8bd7-f1b0-4e95-afcc-3a8b134b377b">
+                <stixCommon:Identity id="example:Identity-cb879a55-d614-4167-87ed-484cd1dc69c6">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -90,8 +90,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-3552a96e-c85e-46c6-8057-072b0cf8f20a" timestamp="2014-06-24T20:52:20.027000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-95d46320-3385-48f6-9c65-5c4d5878fddc" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-fc0f4ecd-930a-4666-9209-1126e21d5a10" timestamp="2014-06-30T18:08:51.308000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-1c5c3c19-0a02-4f38-833c-2297a57829e3" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -102,10 +102,10 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:52:20.027000+00:00">
+            <ta:Type timestamp="2014-06-30T18:08:51.308000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:52:20.027000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:08:51.308000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

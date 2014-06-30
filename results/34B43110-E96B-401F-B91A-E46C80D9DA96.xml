@@ -13,24 +13,24 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-ad4e28ad-2c05-4128-9af7-f39da5c8f914" version="1.1" timestamp="2013-06-26T18:06:38+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-e70ac02e-0674-4a28-848c-bc69ec36fe09" version="1.1.1" timestamp="2013-06-26T18:06:38+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-50a1e643-c452-491d-8974-f42f393438c6" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-e7be9bfa-4fba-4336-8919-bbe75b63bec9" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>On May 7, 2013, Independence Care System, a managed long-term care plan serving senior adults and people with disabilities in New York City, discovered that, during a burglary at the home of a staff member, an ICS laptop containing information regarding 2,435 members was stolen.  For nearly 60% of the affected members, the information included the member’s name, zip code and ICS Member ID number; for the remainder, the information also included the member’s street address, phone number, Medicaid ID number, and enrollment and/or disenrollment dates. No medical, financial or Social Security Number information was contained on the laptop.  This press release is being issued in compliance with Health Insurance Portability and Accountability Act (HIPAA) regulations.  ICS has offered one year of free credit monitoring to affected members.</incident:Title>
             <incident:External_ID source="VERIS">34B43110-E96B-401F-B91A-E46C80D9DA96</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2013-05-07T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-c7211e1d-676d-4c5d-a91d-f754a6f209b9" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-4db36b1b-eebd-43c9-9984-d0306585a553" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -38,7 +38,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-3b294fa8-ef02-4039-a780-fd0d9a83c8ee" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-a9c48e66-a396-4af4-822d-9e7c4e568e94" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Independence Care System</xnl:NameLine>
@@ -65,7 +65,7 @@
                         </incident:Property_Affected>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Loss</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Loss</incident:Type_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
                 </incident:Affected_Asset>
@@ -75,13 +75,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-c2244de9-a0e7-41dc-82e1-0784812c3dbe" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-fedb4ee8-e3a8-4075-ae74-1da2323e56a0" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-ab6b7a0c-1558-44a0-9b01-0f3cd3ae99c0">
+                <stixCommon:Identity id="example:Identity-88d6a082-64e8-4079-b07e-68edd2a12dbb">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -103,8 +103,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-c2244de9-a0e7-41dc-82e1-0784812c3dbe" timestamp="2014-06-24T20:47:57.827000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-0ce09f2e-e16c-4f81-9ff2-b94982b891c1" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-fedb4ee8-e3a8-4075-ae74-1da2323e56a0" timestamp="2014-06-30T18:04:41.746000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-47be5c2a-2925-4f05-bf1a-b2b0988e4d89" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -115,10 +115,10 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:47:57.827000+00:00">
+            <ta:Type timestamp="2014-06-30T18:04:41.746000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:47:57.827000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:04:41.746000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Financial or Economic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

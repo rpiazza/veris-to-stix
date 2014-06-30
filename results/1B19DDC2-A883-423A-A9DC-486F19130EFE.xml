@@ -13,17 +13,17 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-1531a718-454a-4a87-b063-3160f32e38b6" version="1.1" timestamp="2013-06-10T12:04:22+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-c39488b0-72cf-41d1-9992-3e5956c3372e" version="1.1.1" timestamp="2013-06-10T12:04:22+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-c4bca242-2ff0-4576-bec1-fa0c439f2caa" timestamp="2014-05-10T19:23:22+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-669932a2-07f6-4080-8849-1c7f2593ad0d" timestamp="2014-05-10T19:23:22+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>Weather conditions cause data center to flood with moist air which condensed in the cold room leading to rain inside a building. Availability was affected.</incident:Title>
             <incident:External_ID source="VERIS">1B19DDC2-A883-423A-A9DC-486F19130EFE</incident:External_ID>
             <incident:Time>
@@ -32,7 +32,7 @@
                 <incident:Containment_Achieved precision="day">2011-01-02T00:00:00</incident:Containment_Achieved>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-00595a6a-5577-49af-af96-5cbe5c0089ff" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-c4741f31-8355-4849-bcf5-469041a836e8" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">blackfist</xnl:NameLine>
@@ -40,7 +40,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-65dde308-93c2-4897-8681-a80558bf2901" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-ad24cb8a-5295-4dc9-94e0-54b2c9255d99" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Facebook</xnl:NameLine>
@@ -63,7 +63,7 @@
                     <incident:Nature_Of_Security_Effect>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Destruction</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Destruction</incident:Type_Of_Availability_Loss>
                             <incident:Duration_Of_Availability_Loss xsi:type="stixVocabs:LossDurationVocab-1.0">Hours</incident:Duration_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
@@ -74,13 +74,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-07631ee7-0c79-4838-baae-2b82f29e5c12" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-e6bf3322-ae21-4506-9917-452f33306433" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-d411de35-8b06-43c5-8d0d-a780fab1a02f">
+                <stixCommon:Identity id="example:Identity-7af392e4-a3bd-4791-9535-7b73600c637c">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -102,8 +102,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-07631ee7-0c79-4838-baae-2b82f29e5c12" timestamp="2014-06-24T20:47:23.413000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-7c284911-3bd0-4d3b-8520-4f5e8945b03e" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-e6bf3322-ae21-4506-9917-452f33306433" timestamp="2014-06-30T18:04:08.794000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-6f0f21a7-01c3-494d-a79a-576c1e906072" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -114,10 +114,10 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:47:23.413000+00:00">
+            <ta:Type timestamp="2014-06-30T18:04:08.795000+00:00">
                 <stixCommon:Value>Force majeure</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:47:23.413000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:04:08.795000+00:00">
                 <stixCommon:Value>NA</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

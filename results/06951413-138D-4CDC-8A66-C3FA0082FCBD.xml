@@ -13,24 +13,24 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-2fa5a21b-cd0c-46f4-ac8f-b62a7090f39b" version="1.1" timestamp="2014-05-29T20:01:01+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-c676544b-dd71-47ba-8918-3ca6e8298516" version="1.1.1" timestamp="2014-05-29T20:01:01+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-0153d3da-0237-4dc9-b6e3-20f0d2a1e4e5" timestamp="2014-05-29T20:01:01+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-8298fe48-72d9-4109-8db0-86f7cf4abb3e" timestamp="2014-05-29T20:01:01+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>Employee A accessed Veteran A's medical record to obtain information for personal use.</incident:Title>
             <incident:External_ID source="VERIS">06951413-138D-4CDC-8A66-C3FA0082FCBD</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2013-04-12T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-a1ffe842-d018-428d-b9ed-f892442ca140" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-cad0d694-88da-4bc8-9b10-4a7b5b0800f1" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -38,7 +38,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-75c0d856-0f45-4285-ae32-1f6520a65781" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-bb5f22d9-2a25-409f-9e2e-46cd5a7e1e01" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">United States Department of Veterans Affairs</xnl:NameLine>
@@ -68,13 +68,13 @@
             </incident:Affected_Assets>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-382c0c8b-db9a-4b46-a067-05ed8acecf7d" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-164eb919-7d3a-403b-9cce-013fa9973b6e" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-5fb9cfb0-2b67-4b41-b15b-7c1edec82b90">
+                <stixCommon:Identity id="example:Identity-8df1b71c-1340-42eb-9421-fd84a6607929">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -96,12 +96,12 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-382c0c8b-db9a-4b46-a067-05ed8acecf7d" timestamp="2014-06-24T20:46:52.230000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Type timestamp="2014-06-24T20:46:52.230000+00:00">
+        <stix:Threat_Actor id="example:threatactor-164eb919-7d3a-403b-9cce-013fa9973b6e" timestamp="2014-06-30T18:03:39.541000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Type timestamp="2014-06-30T18:03:39.541000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>Unknown</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:46:52.230000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:03:39.541000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Ego</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

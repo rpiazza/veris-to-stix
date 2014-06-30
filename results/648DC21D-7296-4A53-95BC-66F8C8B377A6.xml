@@ -13,17 +13,17 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-e5df2414-b393-450e-82ed-a06739038a33" version="1.1" timestamp="2013-10-25T13:48:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-fe8ffbc1-10e9-41bf-8d48-593d7d48b91d" version="1.1.1" timestamp="2013-10-25T13:48:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-134a2f7b-de8e-4c23-a44d-06742599c837" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-a81b96a1-e72e-414f-b524-55ccd768841d" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>A 48-year-old Maryland man who worked as a waiter in Georgetown was sentenced to 38 months in prison today for stealing credit card information and using it to buy fancy pieces of art and jewelry.  Kerry T. Washington, a former employee of Thunder Burger and Bar, pleaded guilty in August to felony credit card fraud, first-degree felony fraud, and misdemeanor credit card fraud.</incident:Title>
             <incident:External_ID source="VERIS">648DC21D-7296-4A53-95BC-66F8C8B377A6</incident:External_ID>
             <incident:Time>
@@ -31,7 +31,7 @@
                 <incident:Incident_Discovery precision="year">2013-03-01T00:00:00</incident:Incident_Discovery>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-99be2ed4-5ba5-4be2-afc7-3613408a2d75" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-9b269c97-155b-4d4b-8f26-9a91118c3d97" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">whbaker</xnl:NameLine>
@@ -39,7 +39,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-d3a38d4b-7735-42fe-98f7-87d0c4b83a50" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-f7114d97-8374-49f1-a42a-3be8cc93dc10" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Thunder Burger and Bar</xnl:NameLine>
@@ -69,13 +69,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-bf63619b-235a-4d4e-8d8f-56568fc80db2" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-46c25f67-7ad7-4b5d-beda-5e86de22d08c" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Customer</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-660cec9c-3a39-43a0-a51a-e7351cf04efd">
+                <stixCommon:Identity id="example:Identity-5160a3f7-b6fc-4847-8c98-5c31041f884b">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -97,12 +97,12 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-bf63619b-235a-4d4e-8d8f-56568fc80db2" timestamp="2014-06-24T20:49:04.007000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Type timestamp="2014-06-24T20:49:04.007000+00:00">
+        <stix:Threat_Actor id="example:threatactor-46c25f67-7ad7-4b5d-beda-5e86de22d08c" timestamp="2014-06-30T18:05:45.084000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Type timestamp="2014-06-30T18:05:45.084000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>Cashier</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:49:04.007000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:05:45.084000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Financial or Economic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

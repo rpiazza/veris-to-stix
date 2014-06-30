@@ -14,16 +14,16 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1/ttp.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-39d1f920-9f0e-41d2-92ed-e1e9544cf55e" version="1.1" timestamp="2014-05-26T07:26:54.728000+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-307ba940-0f59-4b23-b76f-c0fcd40d418d" version="1.1.1" timestamp="2014-05-26T07:26:54.728000+00:00">
     <stix:STIX_Header>
         <stix:Title>Notes: Military Technical College (mtc.edu.eg), the Tourist Development Authority (tda.gov.eg) and the Egyptian Armed Forces Training Authority (mcf.mil.eg)
 YMH used SQLInjection for similar attacks in the same time frame 
@@ -45,10 +45,10 @@ As its an official embassy website, its not known, whether this site contained c
 </stix:Title>
     </stix:STIX_Header>
     <stix:TTPs>
-        <stix:TTP id="example:ttp-dd26d4d1-153e-41b1-8a7e-0ef01c00ec05" timestamp="2014-06-24T20:47:21.836000+00:00" xsi:type='ttp:TTPType' version="1.1">
+        <stix:TTP id="example:ttp-f78a48f4-dbba-46fc-a317-79febbd1dce3" timestamp="2014-06-30T18:04:07.308000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern capec_id="CAPEC-66" id="example:attackpattern-f6ffc1f6-8c92-42b8-a032-a12f8dc4bb30">
+                    <ttp:Attack_Pattern capec_id="CAPEC-66" id="example:attackpattern-ca448d8d-94f9-4ece-9f47-6a6e2b3334a0">
                         <ttp:Title>SQL Injection</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -56,14 +56,14 @@ As its an official embassy website, its not known, whether this site contained c
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-bbdb71b9-2329-47bf-9c7c-1d02bc803b59" timestamp="2014-05-26T07:26:54.728000+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-b03abba6-350d-44ee-aaea-53823e35ae72" timestamp="2014-05-26T07:26:54.728000+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>Web site defacement</incident:Title>
             <incident:External_ID source="VERIS">19CBFD33-D4D7-4858-8AAB-86C10A2C1467</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2014-03-23T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-f9a349e3-1bf3-4a1c-8028-86127d467eaf" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-e39771b2-91ff-4668-8f00-edda4b267ac3" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">thocoats</xnl:NameLine>
@@ -71,7 +71,7 @@ As its an official embassy website, its not known, whether this site contained c
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-d56968e3-fd4f-43dd-8876-9de3b6252055" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-596be1e1-eef7-4dab-aa23-a3d6acdb62ae" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Egyptian Govt Military education</xnl:NameLine>
@@ -98,18 +98,18 @@ As its an official embassy website, its not known, whether this site contained c
             </incident:Affected_Assets>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-dd26d4d1-153e-41b1-8a7e-0ef01c00ec05" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-f78a48f4-dbba-46fc-a317-79febbd1dce3" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-5b690dab-ea49-4aa7-9910-d542ce479ad0" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-183b1428-d12a-4dbe-acdc-f1d56166fee3" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-fc159a6f-13c6-4398-9958-2cb5b1757a9b">
+                <stixCommon:Identity id="example:Identity-415f9918-6f73-43e3-91b0-d50356f1f9c2">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -131,8 +131,8 @@ As its an official embassy website, its not known, whether this site contained c
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-5b690dab-ea49-4aa7-9910-d542ce479ad0" timestamp="2014-06-24T20:47:21.836000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-fcc738b5-7dcb-4cbd-90e6-e93f706617ce" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-183b1428-d12a-4dbe-acdc-f1d56166fee3" timestamp="2014-06-30T18:04:07.308000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-19c19b95-a2cd-4e35-b202-ad496a594e0c" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -143,15 +143,15 @@ As its an official embassy website, its not known, whether this site contained c
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:47:21.836000+00:00">
+            <ta:Type timestamp="2014-06-30T18:04:07.308000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Hacktivist</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:47:21.836000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:04:07.308000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Ideological</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-dd26d4d1-153e-41b1-8a7e-0ef01c00ec05" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-f78a48f4-dbba-46fc-a317-79febbd1dce3" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

@@ -14,21 +14,21 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1/ttp.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-fd442c5c-0b82-4d81-84b1-198c6b2b66d5" version="1.1" timestamp="2013-09-10T20:13:32+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-c0befc07-f073-4aea-a800-c7c2ef3e52a9" version="1.1.1" timestamp="2013-09-10T20:13:32+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-fc07d00e-b066-4a4b-b984-65e893acb6d1" timestamp="2014-06-24T20:49:02.095000+00:00" xsi:type='ttp:TTPType' version="1.1">
+        <stix:TTP id="example:ttp-c6e56ed4-617d-4c2f-af4b-9ca61978d1b6" timestamp="2014-06-30T18:05:43.256000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern id="example:attackpattern-ca085160-553b-4d3f-9fe4-0f1f5acf0b6e">
+                    <ttp:Attack_Pattern id="example:attackpattern-34b27906-7562-4168-89ea-16a45d335d0d">
                         <ttp:Title>Unknown</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -36,13 +36,13 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-5a303c69-a76d-414b-b41a-29dbe2243193" timestamp="2014-04-27T19:37:02+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-4d60b14f-ea4e-413b-a7ca-0813c1f196dc" timestamp="2014-04-27T19:37:02+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>An unauthorized third party accessed Equity Trust Company's computer network.  The breach was discovered at the end of January 2013 and notification letters were sent on April 15.  Equity Trust customers may have had their names, Social Security numbers, addresses, and other information viewed by online intruders.</incident:Title>
             <incident:External_ID source="VERIS">6234B624-6251-442D-B387-0FBDBC76CF46</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="year">2012-01-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
-            <incident:Victim id="example:Identity-b97e8c6e-e857-4433-bf18-3c5c34c9b431" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-473052c4-5f5d-4c44-916c-4c8e7a0f0244" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Equity Trust Company</xnl:NameLine>
@@ -72,18 +72,18 @@
             </incident:Affected_Assets>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-fc07d00e-b066-4a4b-b984-65e893acb6d1" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-c6e56ed4-617d-4c2f-af4b-9ca61978d1b6" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-90e1c8ca-5e9e-457a-9703-f6b4931dfbf5" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-8a8ef0ad-c7b0-4543-b623-e56908152360" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-f35e57a1-7db9-4d22-8dda-cf4b354de15b">
+                <stixCommon:Identity id="example:Identity-39431bb9-ab3e-477f-95e7-3726f778c7c8">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -105,8 +105,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-90e1c8ca-5e9e-457a-9703-f6b4931dfbf5" timestamp="2014-06-24T20:49:02.095000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-e09c7e64-d0f9-4ef6-aae6-6b7f5d5dd209" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-8a8ef0ad-c7b0-4543-b623-e56908152360" timestamp="2014-06-30T18:05:43.256000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-e6510607-c8ee-46a5-95a4-05617e450c61" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -117,15 +117,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:49:02.096000+00:00">
+            <ta:Type timestamp="2014-06-30T18:05:43.257000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:49:02.095000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:05:43.257000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-fc07d00e-b066-4a4b-b984-65e893acb6d1" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-c6e56ed4-617d-4c2f-af4b-9ca61978d1b6" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

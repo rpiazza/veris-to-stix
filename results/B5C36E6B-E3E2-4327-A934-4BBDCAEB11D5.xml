@@ -13,24 +13,24 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-4066f6ad-6c1b-4f3a-88c1-b21b5e6b8f0c" version="1.1" timestamp="2013-11-03T18:48:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-91901a68-c439-4f51-afe2-0d9bab87398d" version="1.1.1" timestamp="2013-11-03T18:48:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-8e04f929-8f0e-43ac-99b2-d5a371d84400" timestamp="2014-05-10T19:23:23+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-055310b4-45f0-4bf1-ac64-a68e94ebb096" timestamp="2014-05-10T19:23:23+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>The website of the NSA was down for a few hours with speculation that it might have been the victim of DDos Attack. The agency stated that it was an internal error.</incident:Title>
             <incident:External_ID source="VERIS">B5C36E6B-E3E2-4327-A934-4BBDCAEB11D5</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2013-10-16T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-c63137b4-018b-4c9c-afa1-7c5393c675c9" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-557d9ee6-fc8b-485a-9abd-3125dcaa1cf3" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">dhylender</xnl:NameLine>
@@ -38,7 +38,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-8560fd13-a66a-4d79-98b5-25481d15c87e" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-8b9fb6a6-c841-4443-ac52-640313cc48a9" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">National Security Agency (NSA)</xnl:NameLine>
@@ -59,7 +59,7 @@
                     <incident:Nature_Of_Security_Effect>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Interruption</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Interruption</incident:Type_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
                 </incident:Affected_Asset>
@@ -69,13 +69,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-0920033c-0435-4fa4-8e34-a55e49344d50" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-f2916253-ae5e-4d1a-ad92-0ab6546632a4" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-4a775475-ae7d-47ae-afba-a28735df41e8">
+                <stixCommon:Identity id="example:Identity-1e47cd8f-eec3-406f-8547-e103a56bcac0">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -99,12 +99,12 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-0920033c-0435-4fa4-8e34-a55e49344d50" timestamp="2014-06-24T20:50:59.921000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Type timestamp="2014-06-24T20:50:59.921000+00:00">
+        <stix:Threat_Actor id="example:threatactor-f2916253-ae5e-4d1a-ad92-0ab6546632a4" timestamp="2014-06-30T18:07:35.947000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Type timestamp="2014-06-30T18:07:35.947000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>Unknown</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:50:59.921000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:07:35.947000+00:00">
                 <stixCommon:Value>NA</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

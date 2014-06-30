@@ -14,21 +14,21 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1/ttp.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-96b2ea8f-216b-4f96-be88-099c59affea2" version="1.1" timestamp="2014-03-21T17:46:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-4d5cafd2-7733-4269-831a-99c1301be8d6" version="1.1.1" timestamp="2014-03-21T17:46:00+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-35ba3d97-f9bd-44ea-954d-967961fb5634" timestamp="2014-06-24T20:49:31.187000+00:00" xsi:type='ttp:TTPType' version="1.1">
+        <stix:TTP id="example:ttp-739ab591-8174-46fb-97dc-e4d88c3aa8d0" timestamp="2014-06-30T18:06:11.167000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
             <ttp:Behavior>
                 <ttp:Malware>
-                    <ttp:Malware_Instance id="example:malware-8134ebf0-876d-4e5b-8f21-4fa2f6aa9679">
+                    <ttp:Malware_Instance id="example:malware-1adec9b9-3a08-4f16-a163-15918f0c36eb">
                         <ttp:Type>Spyware/Keylogger</ttp:Type>
                         <ttp:Description>just said the student installed the keylogger. it's possible something like a USB drive was used too.</ttp:Description>
                     </ttp:Malware_Instance>
@@ -37,11 +37,11 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-d30557f5-b0e5-45a6-8d34-8e43e0c78136" timestamp="2014-03-21T17:46:00+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-2e43cf1b-4492-4dcc-a3a8-9354ceb14bbf" timestamp="2014-03-21T17:46:00+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>For nearly six months, an array of machines at a computer lab was infected with keystroke logging software. The program recorded every single key entered into the computer between September 2013 and March 2014. My understanding was that the individual charged was a student at the college, said NRP media officer Derek Watson. The malicious software was installed across 10 computers at the campus, but neither the NRP or the college has a clear understanding of how many users logged into the machines and had their information stolen during the six-month period of infection.</incident:Title>
             <incident:External_ID source="VERIS">78F47E45-1E9C-47CC-83F1-3C1FD62A74E4</incident:External_ID>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-03d1bba4-5600-435a-9ca5-cfaa5991bbc4" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-32781c10-a874-4208-87e8-08b8ef21d6a9" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">whbaker</xnl:NameLine>
@@ -49,7 +49,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-6e8755b1-5e87-4629-af89-3ca01efb40d5" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-117435cd-9523-4df8-a439-db575f53a6ed" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Niagara College Of Applied Arts &amp; Technology</xnl:NameLine>
@@ -84,18 +84,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-35ba3d97-f9bd-44ea-954d-967961fb5634" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-739ab591-8174-46fb-97dc-e4d88c3aa8d0" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-b47d460f-430b-4156-a0dd-696f27a5b7ae" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-b976d898-f2d2-4741-8db3-db67c4f54936" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-9b9d7560-caaf-42b0-85b8-e289e61eef58">
+                <stixCommon:Identity id="example:Identity-56a1b4bd-78ed-46d3-8d74-c232cc444fc6">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -117,9 +117,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-b47d460f-430b-4156-a0dd-696f27a5b7ae" timestamp="2014-06-24T20:49:31.187000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
+        <stix:Threat_Actor id="example:threatactor-b976d898-f2d2-4741-8db3-db67c4f54936" timestamp="2014-06-30T18:06:11.168000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
             <ta:Description>Notes: Student of college</ta:Description>
-            <ta:Identity id="example:Identity-d479f5ae-7cb8-4f43-b516-53606f929678" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity id="example:Identity-8b2f1a16-721c-4a09-b32c-b5083e565ae2" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -130,15 +130,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:49:31.187000+00:00">
+            <ta:Type timestamp="2014-06-30T18:06:11.168000+00:00">
                 <stixCommon:Value>Other</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:49:31.187000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:06:11.168000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-35ba3d97-f9bd-44ea-954d-967961fb5634" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-739ab591-8174-46fb-97dc-e4d88c3aa8d0" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

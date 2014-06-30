@@ -14,21 +14,21 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1/ttp.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-b9677aca-c0fd-4e8c-a791-4e6180e0498b" version="1.1" timestamp="2014-02-19T23:57:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-c6b84e9f-bcd4-45b9-8b67-591989eb905a" version="1.1.1" timestamp="2014-02-19T23:57:00+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-35de5074-33fa-4209-97b5-0f490c07cd64" timestamp="2014-06-24T20:50:30.727000+00:00" xsi:type='ttp:TTPType' version="1.1">
+        <stix:TTP id="example:ttp-aa0a671a-f52c-45b4-a3bc-ada1b41dfdf5" timestamp="2014-06-30T18:07:08.019000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern id="example:attackpattern-8a907690-7cbc-46a7-92f7-4ff1eedf9a5b">
+                    <ttp:Attack_Pattern id="example:attackpattern-db7cc9c0-be4f-489e-84a7-289ab91a32d0">
                         <ttp:Title>Other</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -36,14 +36,14 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-5647c879-cd0a-4020-849d-2a72e689ddc8" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-a2857292-df74-4a79-937a-5fa9622778fe" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title> CheckFree Corp. and some of the banks that use its electronic bill payment service are notifying more than 5 million customers that criminals took control of several of the company's Internet domains and redirected customer traffic to a malicious Web site hosted in the Ukraine.  The Dec. 2 attack was widely publicized shortly after it occurred, but in a notice filed with the New Hampshire Attorney General, CheckFree disclosed that it was warning many more customers than previously thought.  That's because CheckFree is not only notifying users of its own CheckFree.com Web site of the breach, it is also working with banks to contact people who tried to pay bills from banks that use the CheckFree bill payment service.  "The 5 million people who were notified about the CheckFree redirection were a combination of two groups," said Melanie Tolley, vice president of communications at CheckFree's parent company, Fiserv Inc., in a statement. "1.) those who we were able to identify who had attempted to pay bills from our client's bill pay sites and minus those who actually completed sessions on our site, and 2.) anyone enrolled in mycheckfree.com."  Tolley wouldn't say what banks were affected by the hack, but the majority of these 5 million customers were CheckFree's own users, she said. In total, about 42 million customers access CheckFree's bill payment site, she said.  Customers who went to CheckFree's Web sites between 12:35 a.m. and 10:10 a.m. on the day of the attack were redirected to a Ukrainian Web server that used malicious software to try and install a password-stealing program on the victim's computer.  The criminals were able to take control of several CheckFree Web domains after logging into the company's Internet domain registrar, Network Solutions, and changing the CheckFree DNS settings. This same technique was used by hackers one year ago to take control of Comcast's Web site. It is not clear how the attackers were able to get CheckFree's Network Solutions password, but some security experts believe that CheckFree may have fallen prey to a phishing attack.  Looking at typical Web site traffic patterns, Fiserv guesses that about 160,000 consumers were exposed to the Ukrainian attack site, but not all of these customers would have been infected. For the attack to work, the victim would have to be a PC user without antivirus software who was also using an out-of-date version of Adobe Acrobat. Because of these conditions, Fiserv believes that "a very small number" of people were affected, Tolley said.  However, because the company lost control of its Web domains, it doesn't know exactly who was hit. And so it must warn a much larger number of customers.</incident:Title>
             <incident:External_ID source="VERIS">A2F2DC7E-0313-4715-A4CB-7BF8AC5AF6B4</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2008-12-02T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-e35aba3f-30c6-4784-b40f-3b3ab880084a" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-7c073984-38aa-4f4a-942e-66b94434e360" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -51,7 +51,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-a07e5b07-4701-4c4a-83e9-925ac1258321" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-88e13076-3f7d-481d-9375-bc1a56ecdbda" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">CheckFree Services Corporation</xnl:NameLine>
@@ -84,18 +84,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-35de5074-33fa-4209-97b5-0f490c07cd64" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-aa0a671a-f52c-45b4-a3bc-ada1b41dfdf5" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-c926c42d-b9ea-4266-8000-9fd45ec5a7ce" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-1ab8fbfd-138a-4590-b196-21389f25251b" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-212ed5a4-0428-4bb5-8c04-076ed602ca12">
+                <stixCommon:Identity id="example:Identity-ea81eee2-7396-46f5-bd45-23dd1d000686">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -117,8 +117,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-c926c42d-b9ea-4266-8000-9fd45ec5a7ce" timestamp="2014-06-24T20:50:30.728000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
-            <ta:Identity id="example:Identity-22f74c8c-4686-4126-9b90-c799dff73e23" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-1ab8fbfd-138a-4590-b196-21389f25251b" timestamp="2014-06-30T18:07:08.020000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+            <ta:Identity id="example:Identity-b0f8b291-ce58-4ec4-bfbd-b2f75ef9f474" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -129,15 +129,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:50:30.728000+00:00">
+            <ta:Type timestamp="2014-06-30T18:07:08.020000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:50:30.728000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:07:08.020000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Financial or Economic</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-35de5074-33fa-4209-97b5-0f490c07cd64" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-aa0a671a-f52c-45b4-a3bc-ada1b41dfdf5" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

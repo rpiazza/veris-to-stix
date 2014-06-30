@@ -14,21 +14,21 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1/ttp.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-d5b447b0-45d1-46b1-9692-3367f74f5174" version="1.1" timestamp="2013-11-10T02:48:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-280f2cd5-a172-473a-9cd7-0df596b95f6a" version="1.1.1" timestamp="2013-11-10T02:48:00+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-b1dad3d3-814e-458b-80b6-360339b19fb2" timestamp="2014-06-24T20:46:47.803000+00:00" xsi:type='ttp:TTPType' version="1.1">
+        <stix:TTP id="example:ttp-00680708-04d3-4e8d-a5fc-a51ad58de8cc" timestamp="2014-06-30T18:03:35.381000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern capec_id="CAPEC-18" id="example:attackpattern-f8847376-5b06-4046-b373-552f64c93a13">
+                    <ttp:Attack_Pattern capec_id="CAPEC-18" id="example:attackpattern-2b1abbd9-96c2-4c7e-a683-cbde682338bd">
                         <ttp:Title>Embedding Scripts in Non-Script Elements</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -36,7 +36,7 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-49bccc1e-6903-4717-973a-5628e93ee1bf" timestamp="2014-05-10T19:23:22+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-d7da1015-ba24-4ea3-9390-9d7b1fd56f1c" timestamp="2014-05-10T19:23:22+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>Singapore Prime Minister's Office website hacked by Anonymous. "It's great to be Singaporean today," read a mocking headline in a section of www.pmo.gov.sg next to the group's trademark Guy Fawkes mask, a symbol of anti-establishment defiance worldwide. The hacker also warned of further attacks on the tightly governed island's technological infrastructure if demands for greater Internet freedom were not met. Singapore strictly regulates the traditional media. Its new Internet rules have sparked anger in the blogging and social media community, which says the rules are designed to muzzle free expression. Authorities insist the new licensing rules do not impinge on Internet freedom.</incident:Title>
             <incident:External_ID source="VERIS">03A6168E-7A55-4000-8033-169112A744EA</incident:External_ID>
             <incident:Time>
@@ -44,7 +44,7 @@
                 <incident:Incident_Discovery precision="hour">2013-11-07T00:30:00</incident:Incident_Discovery>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-d59c0835-d484-4dd0-accd-91fbb48b4da3" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-5224a2f7-5772-4f10-8a82-b65de4eb97e4" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">dhylender</xnl:NameLine>
@@ -52,7 +52,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-c9d04b31-66fc-43c1-ad9b-30a34b788611" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-dc8f1fdb-feee-4d98-9c9b-aba0d98a6d28" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Singapore Prime Minister's Office</xnl:NameLine>
@@ -76,7 +76,7 @@
                         </incident:Property_Affected>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Loss</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Loss</incident:Type_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
                 </incident:Affected_Asset>
@@ -86,18 +86,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-b1dad3d3-814e-458b-80b6-360339b19fb2" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-00680708-04d3-4e8d-a5fc-a51ad58de8cc" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-55421e79-4d4c-4586-b003-9535bd47c9ef" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-ae17107f-2e9f-4447-831d-e0cbe05d166a" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Agent Disclosure</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-0a1b153e-f42b-43f3-b56f-88b78301651a">
+                <stixCommon:Identity id="example:Identity-aed21562-756e-452b-b23b-795982011aba">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -119,9 +119,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-55421e79-4d4c-4586-b003-9535bd47c9ef" timestamp="2014-06-24T20:46:47.803000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
+        <stix:Threat_Actor id="example:threatactor-ae17107f-2e9f-4447-831d-e0cbe05d166a" timestamp="2014-06-30T18:03:35.381000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
             <ta:Description>Notes: Anonymous Peru</ta:Description>
-            <ta:Identity id="example:Identity-f2c30e9a-0882-4685-b07e-dfbc3747ed35" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity id="example:Identity-e1a181fe-4ff2-4e33-bdc9-cf95fe6d0ab3" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -132,15 +132,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-24T20:46:47.803000+00:00">
+            <ta:Type timestamp="2014-06-30T18:03:35.381000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Hacktivist</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-24T20:46:47.803000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:03:35.381000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Ideological</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-b1dad3d3-814e-458b-80b6-360339b19fb2" xsi:type='ttp:TTPType' version="1.1"/>
+                    <stixCommon:TTP idref="example:ttp-00680708-04d3-4e8d-a5fc-a51ad58de8cc" xsi:type='ttp:TTPType' version="1.1.1"/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

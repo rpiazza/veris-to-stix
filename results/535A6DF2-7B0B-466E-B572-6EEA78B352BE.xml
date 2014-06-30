@@ -13,24 +13,24 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
-	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1/incident.xsd
-	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1/threat_actor.xsd
-	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1/stix_common.xsd
-	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.0/stix_default_vocabularies.xsd
-	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1/ciq_3.0_identity.xsd
-	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1/stix_core.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1 http://stix.mitre.org/XMLSchema/extensions/identity/ciq_3.0/1.1.1/ciq_3.0_identity.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-aa1a65ed-8b7c-44d6-8475-ea35ec2a2232" version="1.1" timestamp="2014-05-02T21:25:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-5b2677b9-90a6-4ead-b611-fa38ab486d35" version="1.1.1" timestamp="2014-05-02T21:25:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-df5deb23-30d9-4b8f-a6fa-cd28f3f9382b" timestamp="2014-05-02T21:25:00+00:00" xsi:type='incident:IncidentType' version="1.1">
+        <stix:Incident id="example:incident-6f2b2d43-b2cf-440d-8e98-f767059329b7" timestamp="2014-05-02T21:25:00+00:00" xsi:type='incident:IncidentType' version="1.1.1">
             <incident:Title>Another one? Really, youd think the folks at Clinical Reference Laboratories (CRL) would have found a better way to mail packages by now. For the second time in six months, CRL is reporting a package damaged in the mail has created a data breach.  This breach involved tests run in connection with Nationwide Insurance applications. A package shipped around February 6th was damaged while in the hands of the US Postal Service (USPS).  We have determined that your personal information involved in this incident included your name, date of birth, the last 4 digits of your Social Security number and the type of lab test(s) conducted, CRLs Chief Compliance Officer David Porter wrote in a letter to potential victims.  Porters comments dont divulge the number of individuals involved. Last October, the Lenexa, Kansas firm announced a damaged package containing invoices had leaked Social Security Numbers (SSN) for an unknown number of individuals. Those folks had applied for insurance from Massachusetts Mutual Life Insurance Company. At that time Mass Mutual refused to disclose the number of individuals involved or respond to any questions from idRADAR News regarding the breach.  USPS practices include segregating and then destroying any documents that become separated from their original package. Still, CRL is offering patients a year of free credit monitoring.  CRL has been in business for 30 years and processes 100 million tests annually. A data breach is probably unavoidable for a company this size but two of the same type in less than half a year is concerning.  A comparison of breach letters from the October 2013 incident and todays breach announcement shows theres been not much progress in CRL breach mitigation. Some lost invoices from the 2013 breach included full SSNs on the invoices; it would seem that this latest breach involves only the last 4 digitsa slight improvement but as hackers know, the final 4 are the most useful ones.  Hopefully, CRL will now figure out a better way to reinforce the packages it ships. </incident:Title>
             <incident:External_ID source="VERIS">535A6DF2-7B0B-466E-B572-6EEA78B352BE</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2014-02-06T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-689b6bdb-4320-43bf-bb15-2457cc882740" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity id="example:Identity-70083821-3bf1-4748-be14-b269056087aa" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -38,7 +38,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-4c01b7d1-f4c5-47fe-8282-24a4ee962e92" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim id="example:Identity-bc73013d-bbcf-4f36-847d-3c96a8f56d15" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Clinical Reference Laboratory</xnl:NameLine>
@@ -65,7 +65,7 @@
                         </incident:Property_Affected>
                         <incident:Property_Affected>
                             <incident:Property xsi:type="stixVocabs:LossPropertyVocab-1.0">Availability</incident:Property>
-                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.0">Loss</incident:Type_Of_Availability_Loss>
+                            <incident:Type_Of_Availability_Loss xsi:type="stixVocabs:AvailabilityLossTypeVocab-1.1.1">Loss</incident:Type_Of_Availability_Loss>
                         </incident:Property_Affected>
                     </incident:Nature_Of_Security_Effect>
                 </incident:Affected_Asset>
@@ -75,13 +75,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-b6669dc1-f71d-4f82-af56-537f5a586110" xsi:type='ta:ThreatActorType' version="1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-10a40413-5f12-425e-8083-e6d3c0c38698" xsi:type='ta:ThreatActorType' version="1.1.1"/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Customer</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-362b541a-4ebe-4830-82f9-e1b0e4bb97bf">
+                <stixCommon:Identity id="example:Identity-ae09c7b1-76f3-45e8-9a51-250d6834bfcc">
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -105,9 +105,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-b6669dc1-f71d-4f82-af56-537f5a586110" timestamp="2014-06-24T20:48:41.223000+00:00" xsi:type='ta:ThreatActorType' version="1.1">
+        <stix:Threat_Actor id="example:threatactor-10a40413-5f12-425e-8083-e6d3c0c38698" timestamp="2014-06-30T18:05:23.206000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
             <ta:Description>Notes: United States Post Office Package damaged in shipping</ta:Description>
-            <ta:Identity id="example:Identity-496713b0-2cf8-49dd-a6d3-cce87eb8c347" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity id="example:Identity-171b42bb-155c-4b4d-915d-7b81a1498210" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -118,7 +118,7 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Motivation timestamp="2014-06-24T20:48:41.223000+00:00">
+            <ta:Motivation timestamp="2014-06-30T18:05:23.206000+00:00">
                 <stixCommon:Value>NA</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>
