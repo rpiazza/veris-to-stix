@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ta="http://stix.mitre.org/ThreatActor-1"
@@ -13,6 +15,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
 	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
@@ -21,9 +25,9 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-581acea8-1e12-451b-9529-d63443038215" version="1.1.1" timestamp="2013-09-28T18:18:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-740e6555-c999-4b2e-97f7-89564d59e67a" version="1.1.1" timestamp="2013-09-28T18:18:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-0c61a1b8-fa77-4bb4-90b7-0f86c25534cb" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-aecb7cdb-a3e4-4640-9337-0e2c3a140056" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Without the victim's knowledge or consent, and in violation of our office policies, a physician formerly associated with our practice requested that one of our administrative staff provide him with the names and contact information of our patients, presumably for purposes of notifying them of his new practice information. Without consulting a supervisor or anyone else in senior management, the employee complied and provided the physician with a hard copy print out of patient contact information.</incident:Title>
             <incident:External_ID source="VERIS">A68DB0CD-7AA3-4FCB-A238-D393B71A1282</incident:External_ID>
             <incident:Time>
@@ -31,7 +35,7 @@
                 <incident:Incident_Discovery precision="month">2013-07-25T00:00:00</incident:Incident_Discovery>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-44c8cbc9-f5a2-4113-b8ea-f49746e6b7c4" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">whbaker</xnl:NameLine>
@@ -39,7 +43,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-462d924c-355b-4a84-a948-7dae272097ec" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Tri - State Surgical Associates</xnl:NameLine>
@@ -90,13 +94,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-b98d8e64-b73d-4efd-bc20-4d81ef478fc3" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-71d85f64-46bd-45b4-b3ec-f305846c1c04" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-dc2b6678-a580-49f3-8579-d349e8863c05">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -118,16 +122,16 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-b98d8e64-b73d-4efd-bc20-4d81ef478fc3" timestamp="2014-06-30T18:07:13.782000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Type timestamp="2014-06-30T18:07:13.782000+00:00">
+        <stix:Threat_Actor id="example:threatactor-71d85f64-46bd-45b4-b3ec-f305846c1c04" timestamp="2014-12-22T16:32:20.974000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Type timestamp="2014-12-22T16:32:20.974000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>Unknown</stixCommon:Description>
             </ta:Type>
-            <ta:Type timestamp="2014-06-30T18:07:13.782000+00:00">
+            <ta:Type timestamp="2014-12-22T16:32:20.974000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>End-user</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:07:13.782000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:32:20.974000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Opportunistic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

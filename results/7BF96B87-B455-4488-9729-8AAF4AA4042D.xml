@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:campaign="http://stix.mitre.org/Campaign-1"
 	xmlns:et="http://stix.mitre.org/ExploitTarget-1"
@@ -16,6 +18,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Campaign-1 http://stix.mitre.org/XMLSchema/campaign/1.1.1/campaign.xsd
 	http://stix.mitre.org/ExploitTarget-1 http://stix.mitre.org/XMLSchema/exploit_target/1.1.1/exploit_target.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
@@ -27,29 +31,29 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-d7e45b3d-a7c8-4ef8-83ea-fde1384b9394" version="1.1.1" timestamp="2014-02-17T20:39:13+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-9f607008-4216-44c3-a625-ea5a1fe6c1e5" version="1.1.1" timestamp="2014-02-17T20:39:13+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-d01c3db4-d7d3-40aa-b916-35999ce09760" timestamp="2014-06-30T18:06:16.111000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-3de3a37e-263f-4c8c-ac22-59adf34fb19f" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern capec_id="CAPEC-112" id="example:attackpattern-34c598c1-fd42-47d9-9608-ac3340f7da6c">
+                    <ttp:Attack_Pattern capec_id="CAPEC-112">
                         <ttp:Title>Brute Force</ttp:Title>
                     </ttp:Attack_Pattern>
-                    <ttp:Attack_Pattern capec_id="CAPEC-115" id="example:attackpattern-dee0f840-8caa-4366-b619-422d91a31f1a">
+                    <ttp:Attack_Pattern capec_id="CAPEC-115">
                         <ttp:Title>Authentication Bypass</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
             </ttp:Behavior>
             <ttp:Exploit_Targets>
                 <ttp:Exploit_Target>
-                    <stixCommon:Exploit_Target idref="example:et-9759c3b9-0563-4415-9310-725bd7605556" xsi:type='et:ExploitTargetType' version="1.1.1"/>
+                    <stixCommon:Exploit_Target idref="example:et-80f3f7be-9099-4a5a-8b09-87a41b9fab0b" xsi:type='et:ExploitTargetType'/>
                 </ttp:Exploit_Target>
             </ttp:Exploit_Targets>
         </stix:TTP>
-        <stix:TTP id="example:ttp-07e8fbbc-89d7-4ff2-a698-3e820b312930" timestamp="2014-06-30T18:06:16.111000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-b47dc856-c9a5-4505-8d44-44ffd037f0e3" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Malware>
-                    <ttp:Malware_Instance id="example:malware-e7d321d0-2812-4e3e-bc7b-25e7d19426f5">
+                    <ttp:Malware_Instance>
                         <ttp:Type>C2</ttp:Type>
                         <ttp:Type>Capture stored data</ttp:Type>
                         <ttp:Type>Scan network</ttp:Type>
@@ -65,25 +69,25 @@
             </ttp:Behavior>
             <ttp:Exploit_Targets>
                 <ttp:Exploit_Target>
-                    <stixCommon:Exploit_Target idref="example:et-0a6f498e-f4ac-4a18-a85a-81fd58afa308" xsi:type='et:ExploitTargetType' version="1.1.1"/>
+                    <stixCommon:Exploit_Target idref="example:et-e5f01a44-8432-421e-ba68-c03e408ebb49" xsi:type='et:ExploitTargetType'/>
                 </ttp:Exploit_Target>
             </ttp:Exploit_Targets>
         </stix:TTP>
-        <stix:TTP id="example:ttp-61a31737-d072-49c5-8dd9-7f501155c7e0" timestamp="2014-06-30T18:06:16.111000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-af106fee-9dcb-4ad6-a044-bad9d9533c03" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern capec_id="CAPEC-98" id="example:attackpattern-81e5b215-f5aa-4df7-9dfd-5ee917123f92"/>
+                    <ttp:Attack_Pattern capec_id="CAPEC-98"/>
                 </ttp:Attack_Patterns>
             </ttp:Behavior>
         </stix:TTP>
     </stix:TTPs>
     <stix:Exploit_Targets>
-        <stixCommon:Exploit_Target id="example:et-9759c3b9-0563-4415-9310-725bd7605556" timestamp="2014-06-30T18:06:16.111000+00:00" xsi:type='et:ExploitTargetType' version="1.1.1">
+        <stixCommon:Exploit_Target id="example:et-80f3f7be-9099-4a5a-8b09-87a41b9fab0b" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='et:ExploitTargetType'>
             <et:Vulnerability>
                 <et:CVE_ID>CVE-2008-4250</et:CVE_ID>
             </et:Vulnerability>
         </stixCommon:Exploit_Target>
-        <stixCommon:Exploit_Target id="example:et-0a6f498e-f4ac-4a18-a85a-81fd58afa308" timestamp="2014-06-30T18:06:16.111000+00:00" xsi:type='et:ExploitTargetType' version="1.1.1">
+        <stixCommon:Exploit_Target id="example:et-e5f01a44-8432-421e-ba68-c03e408ebb49" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='et:ExploitTargetType'>
             <et:Vulnerability>
                 <et:CVE_ID>CVE-2009-3129</et:CVE_ID>
             </et:Vulnerability>
@@ -99,14 +103,14 @@
         </stixCommon:Exploit_Target>
     </stix:Exploit_Targets>
     <stix:Incidents>
-        <stix:Incident id="example:incident-8a39756f-e184-4fc9-9abf-8a8990f21e75" timestamp="2014-06-25T20:35:21+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-ddeb7400-a8e0-47d9-aff6-dd2919a96a76" timestamp="2014-06-25T20:35:21+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Incident associated with Red October campaign. Phishing email with malware attachment leading to infection, C2, credential compromise, and lateral movement through network. Goal to steal classified info and secrets.</incident:Title>
             <incident:External_ID source="VERIS">7BF96B87-B455-4488-9729-8AAF4AA4042D</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="year">2012-01-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-c18933ec-068d-4c29-bb2f-b03a8ecfa084" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">wbaker</xnl:NameLine>
@@ -114,7 +118,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-21a4a7db-94d6-413f-a8d1-30b3e66c7067" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -195,24 +199,24 @@
             </incident:Affected_Assets>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-d01c3db4-d7d3-40aa-b916-35999ce09760" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-3de3a37e-263f-4c8c-ac22-59adf34fb19f" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-07e8fbbc-89d7-4ff2-a698-3e820b312930" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-b47dc856-c9a5-4505-8d44-44ffd037f0e3" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-61a31737-d072-49c5-8dd9-7f501155c7e0" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-af106fee-9dcb-4ad6-a044-bad9d9533c03" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-55bbfccc-afae-49ba-9c96-0111c64a9ef3" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-3045ca52-6a11-460c-9f86-1f92a74b8934" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method>Ext - suspicious traffic</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-2c828f1e-543e-4287-b47c-962fef824e68">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -237,14 +241,16 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Campaigns>
-        <stix:Campaign id="example:Campaign-2ab28023-727b-4eb9-bcd7-03d607febbe1" timestamp="2014-06-30T18:06:16.112000+00:00" xsi:type='campaign:CampaignType' version="1.1.1">
-            <campaign:Names>CBAA666B-8213-4F6B-B6AC-29896A9C1455</campaign:Names>
+        <stix:Campaign id="example:Campaign-46ee51d2-5307-4131-9e8b-5b298c69a07d" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='campaign:CampaignType'>
+            <campaign:Names>
+                <campaign:Name>CBAA666B-8213-4F6B-B6AC-29896A9C1455</campaign:Name>
+            </campaign:Names>
         </stix:Campaign>
     </stix:Campaigns>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-55bbfccc-afae-49ba-9c96-0111c64a9ef3" timestamp="2014-06-30T18:06:16.112000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Description>Notes: Basing on registration data of C&amp;C servers and numerous artifacts left in executables of the malware, we strongly believe that the attackers have Russian-speaking origins. Current attackers and executables developed by them have been unknown until recently, they have never related to any other targeted cyberattacks.</ta:Description>
-            <ta:Identity id="example:Identity-21d95644-dd52-4dee-9cd2-aea48159fd27" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-3045ca52-6a11-460c-9f86-1f92a74b8934" timestamp="2014-12-22T16:30:21.536000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Description>Notes: Basing on registration data of C&amp;amp;C servers and numerous artifacts left in executables of the malware, we strongly believe that the attackers have Russian-speaking origins. Current attackers and executables developed by them have been unknown until recently, they have never related to any other targeted cyberattacks.</ta:Description>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -255,21 +261,21 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:06:16.112000+00:00">
+            <ta:Type timestamp="2014-12-22T16:30:21.536000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">State Actor / Agency</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:06:16.112000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:30:21.536000+00:00">
                 <stixCommon:Value>Espionage</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-d01c3db4-d7d3-40aa-b916-35999ce09760" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-3de3a37e-263f-4c8c-ac22-59adf34fb19f" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-07e8fbbc-89d7-4ff2-a698-3e820b312930" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-b47dc856-c9a5-4505-8d44-44ffd037f0e3" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-61a31737-d072-49c5-8dd9-7f501155c7e0" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-af106fee-9dcb-4ad6-a044-bad9d9533c03" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ta="http://stix.mitre.org/ThreatActor-1"
@@ -13,6 +15,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
 	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
@@ -21,9 +25,9 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-b3938a0d-1d8c-4c34-9d56-1b4bf1eac2ed" version="1.1.1" timestamp="2014-05-29T20:01:01+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-69dead8f-4375-474e-bbe0-6a71bba3f166" version="1.1.1" timestamp="2014-05-29T20:01:01+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-b08e8c6e-f434-4f1d-b24f-39b85e220926" timestamp="2014-05-29T20:01:01+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-0bb13339-e796-4375-b870-5440f258d5fa" timestamp="2014-07-30T19:07:18+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>VA Neurosurgery Contract staff transmitted/stored VA patient personally identifiable information (PII) and protected health information (PHI) including name, last four digits of the SSN and diagnosis, to a non-VA website found at http://www.editgrid.com. The site is an on-line spreadsheet where users can save data and access it from any internet browser. The contract staff save VA PII/PHI in a spreadsheet, as a way to track their VA procedure schedule. A shared username/password is used by all contract staff to access the VA section of the website. The website provides no encryption (no https://). 
 The Information Security Officer (ISO) contacted the VA contract staff and instructed them to remove the VA PII/PHI from the site. They responded that they will do 
 this immediately. The ISO also instructed the contract staff that transmitting/storing VA PII/PHI outside of VA was a violation of VA Policy and should never be 
@@ -34,7 +38,7 @@ This issue is similar to the Google.docs that surfaced last year. Consideration 
                 <incident:Initial_Compromise precision="day">2011-08-15T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-a9923a29-ac83-4f71-8d59-02991d32f829" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -42,7 +46,7 @@ This issue is similar to the Google.docs that surfaced last year. Consideration 
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-f538f98f-6172-49ea-9530-e929d624f167" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">United States Department of Veterans Affairs</xnl:NameLine>
@@ -72,13 +76,13 @@ This issue is similar to the Google.docs that surfaced last year. Consideration 
             </incident:Affected_Assets>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-b5c378e4-9151-4e2e-b9dc-35900e53a0b0" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-2d2be46c-0049-49af-98e6-7f5ad3238715" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-444d6d53-f8fd-4597-a178-a5434378815c">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -100,12 +104,12 @@ This issue is similar to the Google.docs that surfaced last year. Consideration 
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-b5c378e4-9151-4e2e-b9dc-35900e53a0b0" timestamp="2014-06-30T18:08:08.634000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Type timestamp="2014-06-30T18:08:08.634000+00:00">
+        <stix:Threat_Actor id="example:threatactor-2d2be46c-0049-49af-98e6-7f5ad3238715" timestamp="2014-12-22T16:33:52.783000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Type timestamp="2014-12-22T16:33:52.783000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>Unknown</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:08:08.634000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:33:52.783000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Opportunistic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

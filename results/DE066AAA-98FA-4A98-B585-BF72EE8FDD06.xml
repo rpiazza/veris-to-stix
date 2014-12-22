@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ttp="http://stix.mitre.org/TTP-1"
@@ -14,6 +16,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
@@ -23,21 +27,21 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-e5644798-1c5f-4a96-9115-6539b9c12ab5" version="1.1.1" timestamp="2013-02-14T23:29:41+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-38e467be-a7f6-4956-af5c-fad02c3226cd" version="1.1.1" timestamp="2013-02-14T23:29:41+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-604898d0-caac-4148-8976-e06c7270446d" timestamp="2014-06-30T18:08:33.082000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-30e6fad9-fd79-4227-bd31-122816f7ad07" timestamp="2014-12-22T16:35:21.052000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Description>Notes: "The person was able to impersonate myself with our Web hosting company, and provide correct answers to their verification questions. And thereby gain access to our client account with the host, and ultimately change the email and then request a mailing of the access details."</ttp:Description>
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-949bcfbd-9dda-4aff-b2a0-4cf97db880c8" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-bc22896d-2f41-4911-811f-dc46a6e213c3" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Client management billing platform WHMCS last week notified customers that hacker group UGNazi fooled its Web hosting firm into providing the hackers with administrative credentials.  The hackers stole the data, deleted it from the hosting provider's systems, and then posted it on the Web.  UGNazi also gained access to WHMCS’s Twitter account, which it used to publicize a series of posts on Pastebin that contained links to locations from which the billing firm’s customer records and other sensitive data might be downloaded. A total of 500,000 records, including customer credit card details, were leaked as a result of the hack, according to news reports.  WHMCS developer Matt Pugh wrote in a blog: "The person was able to impersonate myself with our Web hosting company, and provide correct answers to their verification questions. And thereby gain access to our client account with the host, and ultimately change the email and then request a mailing of the access details.  "This means that there was no actual hacking of our server. They were ultimately given the access details. This is obviously a terrible situation, and very unfortunate, but rest assured that this was no issue or vulnerability with the WHMCS software itself."  UGNazi compounded the problem by launching a large-scale distributed denial-of-service attack that froze WHMCS's Web servers. </incident:Title>
             <incident:External_ID source="VERIS">DE066AAA-98FA-4A98-B585-BF72EE8FDD06</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="year">2012-01-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-4bee37e8-50c4-45a9-a915-3877bd00782c" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -45,7 +49,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-2c6ae7c4-accc-4bd3-a06d-692ce8ffcb1e" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">WHMCS</xnl:NameLine>
@@ -105,18 +109,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-604898d0-caac-4148-8976-e06c7270446d" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-30e6fad9-fd79-4227-bd31-122816f7ad07" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-5d12b987-9868-422f-bde3-5fdce4c560ca" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-280db0b3-b757-496f-8a07-041081bc582c" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Agent Disclosure</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-5a5cfc48-329d-420c-8a9e-44ce4ade1634">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -138,9 +142,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-5d12b987-9868-422f-bde3-5fdce4c560ca" timestamp="2014-06-30T18:08:33.082000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+        <stix:Threat_Actor id="example:threatactor-280db0b3-b757-496f-8a07-041081bc582c" timestamp="2014-12-22T16:35:21.052000+00:00" xsi:type='ta:ThreatActorType'>
             <ta:Description>Notes: hacker group UGNazi</ta:Description>
-            <ta:Identity id="example:Identity-c3a169e7-0787-44c5-b07e-ebd6ad6de187" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -151,15 +155,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:08:33.083000+00:00">
+            <ta:Type timestamp="2014-12-22T16:35:21.052000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Hacktivist</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:08:33.083000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:35:21.052000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Ego</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-604898d0-caac-4148-8976-e06c7270446d" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-30e6fad9-fd79-4227-bd31-122816f7ad07" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

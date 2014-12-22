@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ta="http://stix.mitre.org/ThreatActor-1"
@@ -13,6 +15,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
 	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
@@ -21,16 +25,16 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-d9e4ba2c-d8c0-4700-a1ee-78a032830527" version="1.1.1" timestamp="2014-03-24T03:54:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-f3c9ae28-3566-4eec-a26f-bd830b06a3f1" version="1.1.1" timestamp="2014-03-24T03:54:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-3efeb9e4-8b35-4839-b935-270f585bc68a" timestamp="2014-03-24T03:54:00+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-b2a11001-ecaf-4c2f-a2c2-1c3b64bc9e67" timestamp="2014-03-24T03:54:00+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>The Social Security numbers and billing information of hundreds of thousands of patients in San Francisco and Los Angeles have been stolen after a break-in at a billing contractor.  The information was stored on computers that were stolen from Sutherland Healthcare Solutions in Torrance, Calif., which provides billing services for the health departments of Los Angeles County and San Francisco.  The breach affects 55,900 patients in San Francisco and 168,500 patients in Los Angeles County.  Most of the affected patients are uninsured, according to a press release from the San Francisco Department of Public Health.  Personal information that was compromised includes names, billing information, some social security numbers, dates and locations of services, and dates of birth.  The theft underscores the dangerous possibility of data being stolen from contracted companies that have been entrusted with thousands of people's sensitive personal information.  Los Angeles County Assistant Auditor-Controller Robert Campbell told the Los Angeles Times that he's "not aware of another breach of this significance ever having occurred."  The health departments are notifying those affected by mail, but it might be challenging to reach everyone because some patients might have changed addresses or have difficulty receiving mail, said Rachael Kagan, a spokeswoman for the San Francisco Department of Public Health. San Francisco is also organizing other outreach efforts to track down affected patients.  Free credit monitoring will be offered to those whose information might have been compromised.</incident:Title>
             <incident:External_ID source="VERIS">D6F921C8-9A6A-424A-841F-F1BCD0CCE5DF</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="month">2014-02-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-488991ed-e160-4233-894e-9847df8592e6" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -38,7 +42,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-c3bd0664-ac22-4427-a84d-3b74634f3dc6" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Los Angeles Department of Health</xnl:NameLine>
@@ -75,13 +79,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-d4e216d2-dbd6-4d24-83e2-c69a6be6354b" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-a4fd3861-fa69-4b6b-bfc8-5f272933e020" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Customer</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-20847612-6a59-4532-9ea6-2876761a6dbc">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -105,8 +109,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-d4e216d2-dbd6-4d24-83e2-c69a6be6354b" timestamp="2014-06-30T18:08:22.228000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Identity id="example:Identity-3aac8519-a7bb-4085-8fb6-09c5fed324ac" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-a4fd3861-fa69-4b6b-bfc8-5f272933e020" timestamp="2014-12-22T16:34:59.081000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -117,10 +121,10 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:08:22.228000+00:00">
+            <ta:Type timestamp="2014-12-22T16:34:59.081000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:08:22.228000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:34:59.081000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Financial or Economic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

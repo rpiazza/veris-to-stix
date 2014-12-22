@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ttp="http://stix.mitre.org/TTP-1"
@@ -14,6 +16,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
@@ -23,12 +27,12 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-5ddc44c1-58eb-456f-bd49-fc472f4856f2" version="1.1.1" timestamp="2013-04-22T19:03:03+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-e1947519-7dea-4c8e-b1b9-6ffddff75779" version="1.1.1" timestamp="2013-04-22T19:03:03+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-599ccbfb-c4c8-4d5f-bc42-372c5fe787af" timestamp="2014-06-30T18:07:16.606000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-248e0939-4353-45c8-8b96-b2d64aee65fc" timestamp="2014-12-22T16:32:29.036000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern id="example:attackpattern-1c8596ee-3a93-4d9c-ad96-5298c8a53e2f">
+                    <ttp:Attack_Pattern>
                         <ttp:Title>Unknown</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -36,22 +40,22 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-02536c32-c52b-49c3-bd37-588f2193c0ff" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-627fff63-e2e1-49ad-b36d-3be7ebbaf0a2" timestamp="2014-07-08T13:56:58+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Customer service turned into customer disservice on Thursday, when a security breach at Zendesk spilled over to affect Twitter, Tumblr, and Pinterest users.  Zendesk, which supplies customer service software for the three companies, said on its blog that hackers downloaded the email addresses of users who contacted the three social networks for support help, along with the subject lines of said support emails. The company claims that no other critical data has been accessed. </incident:Title>
             <incident:External_ID source="VERIS">A8320814-9DC4-4F9F-A848-144AB8ABF8B9</incident:External_ID>
             <incident:Time>
-                <incident:Initial_Compromise precision="month">2013-02-01T00:00:00</incident:Initial_Compromise>
+                <incident:Initial_Compromise precision="day">2013-02-16T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-6305eb18-a814-44ce-8073-d4976c42c8da" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
-    <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
+    <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">blackfist</xnl:NameLine>
   </xpil:PartyName>
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-f813e234-f9b4-4746-979b-3111eab6b724" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Zendesk</xnl:NameLine>
@@ -84,21 +88,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-599ccbfb-c4c8-4d5f-bc42-372c5fe787af" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-248e0939-4353-45c8-8b96-b2d64aee65fc" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-b172b232-db2e-49ff-a289-3edc6a788491" xsi:type='ta:ThreatActorType' version="1.1.1"/>
-                </incident:Threat_Actor>
-                <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-f958e37a-a2af-467e-8ec2-f474f8427848" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-7fb00ae5-0732-461b-b075-ba80d0d62883" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-2cad59c9-39b6-4af1-b492-8779d7f2a057">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -115,53 +116,33 @@
                 </stixCommon:Tools>
                 <stixCommon:References>
                     <stixCommon:Reference>http://upennsocialbook.wordpress.com/2013/02/22/another-privacy-breach-your-safety-is-our-highest-priority/, http://www.pcworld.com/article/2029028/zendesk-security-breach-affects-twitter-tumblr-and-pinterest-users.html</stixCommon:Reference>
+                    <stixCommon:Reference>http://arstechnica.com/security/2014/07/feds-unmask-mystery-hacker-who-hamburgled-burger-king-twitter-account/</stixCommon:Reference>
                 </stixCommon:References>
             </incident:Information_Source>
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-b172b232-db2e-49ff-a289-3edc6a788491" timestamp="2014-06-30T18:07:16.606000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Identity id="example:Identity-c7754120-5874-429a-95f7-c85e70d65ac0" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-7fb00ae5-0732-461b-b075-ba80d0d62883" timestamp="2014-12-22T16:32:29.036000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
       <xal:Country xmlns:xal="urn:oasis:names:tc:ciq:xal:3">
-        <xal:NameElement>Unknown</xal:NameElement>
+        <xal:NameElement>US</xal:NameElement>
       </xal:Country>
     </xpil:Address>
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:07:16.606000+00:00">
+            <ta:Type timestamp="2014-12-22T16:32:29.036000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:07:16.606000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:32:29.036000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-599ccbfb-c4c8-4d5f-bc42-372c5fe787af" xsi:type='ttp:TTPType' version="1.1.1"/>
-                </ta:Observed_TTP>
-            </ta:Observed_TTPs>
-        </stix:Threat_Actor>
-        <stix:Threat_Actor id="example:threatactor-f958e37a-a2af-467e-8ec2-f474f8427848" timestamp="2014-06-30T18:07:16.606000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Identity id="example:Identity-fc4dd94b-98f2-4117-b25c-76e49792fa3c" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
-                <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
-  <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
-    <xpil:Address>
-      <xal:Country xmlns:xal="urn:oasis:names:tc:ciq:xal:3">
-        <xal:NameElement>Unknown</xal:NameElement>
-      </xal:Country>
-    </xpil:Address>
-  </xpil:Addresses>
-</ExtSch:Specification>
-            </ta:Identity>
-            <ta:Motivation timestamp="2014-06-30T18:07:16.606000+00:00">
-                <stixCommon:Value>Unknown</stixCommon:Value>
-            </ta:Motivation>
-            <ta:Observed_TTPs>
-                <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-599ccbfb-c4c8-4d5f-bc42-372c5fe787af" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-248e0939-4353-45c8-8b96-b2d64aee65fc" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

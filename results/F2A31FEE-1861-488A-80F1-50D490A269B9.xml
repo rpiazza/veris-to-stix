@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ttp="http://stix.mitre.org/TTP-1"
@@ -14,6 +16,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
@@ -23,15 +27,15 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-0b8e8db4-81fe-4137-945e-a14873734d6c" version="1.1.1" timestamp="2014-03-11T16:18:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-d8cb7d3e-d8d6-48f4-8667-ab6eef3d8fe5" version="1.1.1" timestamp="2014-03-11T16:18:00+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-5f51b574-be3e-4b6a-8d9f-acad69fad2c7" timestamp="2014-06-30T18:09:01.173000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-fc475ed7-532d-4052-8e95-e8c90cdf4155" timestamp="2014-12-22T16:36:18.918000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern capec_id="CAPEC-183" id="example:attackpattern-e750aedf-6161-44ef-a711-1de32b0e87ef">
+                    <ttp:Attack_Pattern capec_id="CAPEC-183">
                         <ttp:Title>IMAP/SMTP Command Injection</ttp:Title>
                     </ttp:Attack_Pattern>
-                    <ttp:Attack_Pattern capec_id="CAPEC-119" id="example:attackpattern-ed3981a9-d5dc-42cd-b658-97d11619cc2f">
+                    <ttp:Attack_Pattern capec_id="CAPEC-119">
                         <ttp:Title>Deplete Resources</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -39,14 +43,14 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-d49bf49b-c005-4237-ae8a-c2d0bdd4ec5b" timestamp="2014-03-11T16:18:00+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-0394e862-a1a3-4e77-96af-2a974303b94c" timestamp="2014-03-11T16:18:00+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Ukraine's telecommunications system has come under attack, with equipment installed in Russian-controlled Crimea used to interfere with the mobile phones of members of parliament, the head of Ukraine's SBU security service said on Tuesday.</incident:Title>
             <incident:External_ID source="VERIS">F2A31FEE-1861-488A-80F1-50D490A269B9</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="day">2014-03-04T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-239ce93f-087c-49a9-b73c-f02e570ab05f" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">blackfist</xnl:NameLine>
@@ -54,7 +58,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-e78d7431-9f0b-441d-80bf-5b983793c7bb" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">UA Ukraine telecommunication systems</xnl:NameLine>
@@ -89,18 +93,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-5f51b574-be3e-4b6a-8d9f-acad69fad2c7" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-fc475ed7-532d-4052-8e95-e8c90cdf4155" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-75fe9177-9888-4bd4-9522-84cec32cd351" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-3ab3a7f4-e333-4bbd-b37d-6b3bfcadc809" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-779e7cdb-b683-438c-8e8a-16c667183226">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -123,9 +127,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-75fe9177-9888-4bd4-9522-84cec32cd351" timestamp="2014-06-30T18:09:01.173000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+        <stix:Threat_Actor id="example:threatactor-3ab3a7f4-e333-4bbd-b37d-6b3bfcadc809" timestamp="2014-12-22T16:36:18.918000+00:00" xsi:type='ta:ThreatActorType'>
             <ta:Description>Notes: Russians are strongly suspected</ta:Description>
-            <ta:Identity id="example:Identity-2e9c5e5a-847a-4e9e-8ec3-5405db19b050" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -136,15 +140,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:09:01.173000+00:00">
+            <ta:Type timestamp="2014-12-22T16:36:18.918000+00:00">
                 <stixCommon:Value>Nation-state</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:09:01.173000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:36:18.918000+00:00">
                 <stixCommon:Value>Espionage</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-5f51b574-be3e-4b6a-8d9f-acad69fad2c7" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-fc475ed7-532d-4052-8e95-e8c90cdf4155" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

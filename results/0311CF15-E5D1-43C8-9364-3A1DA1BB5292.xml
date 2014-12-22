@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ttp="http://stix.mitre.org/TTP-1"
@@ -14,6 +16,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
@@ -23,12 +27,12 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-060a50d4-27e6-4cc5-8a05-f6ac65ca4eba" version="1.1.1" timestamp="2014-02-07T03:47:47+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-1b34caf9-2d48-4c74-8196-4d008b315d1f" version="1.1.1" timestamp="2014-02-07T03:47:47+00:00">
     <stix:TTPs>
-        <stix:TTP id="example:ttp-cac427b9-0ce5-401a-8ffb-e62b42a1bd52" timestamp="2014-06-30T18:03:34.694000+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+        <stix:TTP id="example:ttp-b912159e-ee14-4fdb-9ac7-b74e238d9a59" timestamp="2014-12-22T16:21:59.598000+00:00" xsi:type='ttp:TTPType'>
             <ttp:Behavior>
                 <ttp:Attack_Patterns>
-                    <ttp:Attack_Pattern id="example:attackpattern-cdca73e0-aa50-4528-92c0-29c93c818ae2">
+                    <ttp:Attack_Pattern>
                         <ttp:Title>Unknown</ttp:Title>
                     </ttp:Attack_Pattern>
                 </ttp:Attack_Patterns>
@@ -36,14 +40,14 @@
         </stix:TTP>
     </stix:TTPs>
     <stix:Incidents>
-        <stix:Incident id="example:incident-8947fbb6-ec7f-4d99-8c32-29ed8c75679b" timestamp="2014-05-10T00:58:18+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-0aa664fb-48b6-4da2-b401-6d9e8ab2e1bc" timestamp="2014-05-10T00:58:18+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>The website of Care2, an organization thats all about living a healthy, green lifestyle, has been breached in the last days of December by an unknown hacker team that managed to access the login information belonging to a number of the sites members.  The official statement released by the company claims that only a limited number of Care2 member accounts were accessed by the cybercriminals, but as a precaution measure, all their 17,911,623 account holders are forced to change their passwords on their next log-in.  We sincerely apologize for this inconvenience. Given our large membership size, we have become a significant target for spammers and hackers over the past few years, and this was the first hacking attempt that successfully breached our protective walls, Care2 representatives wrote on the sites blog.  The vulnerabilities which the hackers used to penetrate the sites defenses were immediately patched up to prevent further access, but the incident is still being investigated to determine the full extent of the breach.  The FBI has been contacted to investigate the matter, but so far, the only clues to point to the identity of the attackers are some IP addresses from Russia. This, however, doesnt necessarily prove that the attack was launched from there. It could be that the hackers compromised devices from this certain location.  Since no financial information is stored in the sites databases, the hackers may have targeted Care2 in order to obtain passwords which they can later use to gain access to other accounts, including ones that contain more sensitive data.  This is exactly why customers are advised not only to change their passwords on the breached site, but also on others that share the same credentials. This procedure has to be done in the shortest time since after they get their hands on the loot, the crooks will try to make the best of it before their victims get to do anything about it.  Customers who experience issues in recovering their passwords are advised to contact Care2 customer support for help.</incident:Title>
             <incident:External_ID source="VERIS">0311CF15-E5D1-43C8-9364-3A1DA1BB5292</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="month">2011-12-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-2dea9d6f-feef-4aa8-be1e-86d32cc765d5" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -51,7 +55,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-d5693a7c-fd90-4c86-a51d-c6c99884afdb" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Care2</xnl:NameLine>
@@ -88,18 +92,18 @@
             </incident:Impact_Assessment>
             <incident:Leveraged_TTPs>
                 <incident:Leveraged_TTP>
-                    <stixCommon:TTP idref="example:ttp-cac427b9-0ce5-401a-8ffb-e62b42a1bd52" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-b912159e-ee14-4fdb-9ac7-b74e238d9a59" xsi:type='ttp:TTPType'/>
                 </incident:Leveraged_TTP>
             </incident:Leveraged_TTPs>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-74f84e31-d37a-443a-b41a-0b2390f72660" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-310b173b-5c78-4ac4-8109-5d75b514cbaf" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-84f94b13-c4be-452c-bd34-e22497a07a04">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -121,8 +125,8 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-74f84e31-d37a-443a-b41a-0b2390f72660" timestamp="2014-06-30T18:03:34.694000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Identity id="example:Identity-2be0ff2a-f666-4575-97af-24f480907b00" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+        <stix:Threat_Actor id="example:threatactor-310b173b-5c78-4ac4-8109-5d75b514cbaf" timestamp="2014-12-22T16:21:59.598000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -133,15 +137,15 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:03:34.694000+00:00">
+            <ta:Type timestamp="2014-12-22T16:21:59.598000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:03:34.694000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:21:59.598000+00:00">
                 <stixCommon:Value>Unknown</stixCommon:Value>
             </ta:Motivation>
             <ta:Observed_TTPs>
                 <ta:Observed_TTP>
-                    <stixCommon:TTP idref="example:ttp-cac427b9-0ce5-401a-8ffb-e62b42a1bd52" xsi:type='ttp:TTPType' version="1.1.1"/>
+                    <stixCommon:TTP idref="example:ttp-b912159e-ee14-4fdb-9ac7-b74e238d9a59" xsi:type='ttp:TTPType'/>
                 </ta:Observed_TTP>
             </ta:Observed_TTPs>
         </stix:Threat_Actor>

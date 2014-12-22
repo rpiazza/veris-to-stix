@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ta="http://stix.mitre.org/ThreatActor-1"
@@ -13,6 +15,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
 	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
@@ -21,12 +25,12 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-3e9961a9-c510-4e43-9ce8-03bcc287379b" version="1.1.1" timestamp="2013-11-17T01:25:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-e22ccebc-3917-4253-a725-e0d0e1fa88a4" version="1.1.1" timestamp="2013-11-17T01:25:00+00:00">
     <stix:STIX_Header>
         <stix:Title>Notes: Coding this as 1 incidents combing the outage and use of personal email/phones because they're so closely related. I'll mark this for review in case someone thinks it should be split up.</stix:Title>
     </stix:STIX_Header>
     <stix:Incidents>
-        <stix:Incident id="example:incident-b7511fb5-7e8c-4ccd-bedf-a822e30e41a1" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-c3196ba7-4972-42f3-a0fb-8fd3827f90b8" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>Staff with Alberta Health Services breached patients privacy by using unsecured personal email and cellphones to carry on business after an outage caused by a fire at the Shaw building. The damage affected servers that stored personal and health information for Service Alberta, Alberta Treasury Branches, Alberta Health and Alberta Health Services.  The AHS electronic network and its backup system were knocked out for 36 hours. That led to lab services delays, major paper record backlogs and the cancellation of more than 100 elective surgeries at Calgary hospitals. But at issue is the fact staff resorted to sharing information over personal email and cellphones outside a secure network.</incident:Title>
             <incident:External_ID source="VERIS">AE263091-A728-4455-88D5-4EBD1F8B480E</incident:External_ID>
             <incident:Time>
@@ -34,7 +38,7 @@
                 <incident:Initial_Compromise precision="day">2012-07-11T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-7eff35ea-d0ee-481e-b92a-232251b3b56b" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">whbaker</xnl:NameLine>
@@ -42,7 +46,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-7b212a1c-c2d2-4c4f-a486-df5a2bac467a" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">Alberta Health Services</xnl:NameLine>
@@ -123,16 +127,16 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-58165047-dbab-4b44-bcca-0ffc81b975c5" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-7ef9c10b-5aee-48e5-9e71-7f606a25f4c6" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-fe3a7299-cb6b-4a0b-83bd-0668b4795c6a" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-459d2277-81af-4969-a786-4a7d10c6c685" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Unknown</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-cb7c5232-aa49-4697-b3cb-918032146ca1">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -154,9 +158,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-58165047-dbab-4b44-bcca-0ffc81b975c5" timestamp="2014-06-30T18:07:23.540000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+        <stix:Threat_Actor id="example:threatactor-7ef9c10b-5aee-48e5-9e71-7f606a25f4c6" timestamp="2014-12-22T16:32:36.579000+00:00" xsi:type='ta:ThreatActorType'>
             <ta:Description>Notes: Looks like "NA" is not an option for actor.external.country</ta:Description>
-            <ta:Identity id="example:Identity-d22183d4-e868-415c-bbab-1916dfc84dcf" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -167,19 +171,19 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Type timestamp="2014-06-30T18:07:23.541000+00:00">
+            <ta:Type timestamp="2014-12-22T16:32:36.579000+00:00">
                 <stixCommon:Value>Force majeure</stixCommon:Value>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:07:23.541000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:32:36.579000+00:00">
                 <stixCommon:Value>NA</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>
-        <stix:Threat_Actor id="example:threatactor-fe3a7299-cb6b-4a0b-83bd-0668b4795c6a" timestamp="2014-06-30T18:07:23.541000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
-            <ta:Type timestamp="2014-06-30T18:07:23.541000+00:00">
+        <stix:Threat_Actor id="example:threatactor-459d2277-81af-4969-a786-4a7d10c6c685" timestamp="2014-12-22T16:32:36.579000+00:00" xsi:type='ta:ThreatActorType'>
+            <ta:Type timestamp="2014-12-22T16:32:36.579000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:ThreatActorTypeVocab-1.0">Insider Threat</stixCommon:Value>
                 <stixCommon:Description>End-user</stixCommon:Description>
             </ta:Type>
-            <ta:Motivation timestamp="2014-06-30T18:07:23.541000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:32:36.579000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Opportunistic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>

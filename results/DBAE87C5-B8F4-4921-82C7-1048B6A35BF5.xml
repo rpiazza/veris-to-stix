@@ -1,5 +1,7 @@
 <stix:STIX_Package 
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
 	xmlns:example="http://example.com"
 	xmlns:incident="http://stix.mitre.org/Incident-1"
 	xmlns:ta="http://stix.mitre.org/ThreatActor-1"
@@ -13,6 +15,8 @@
 	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3"
 	xsi:schemaLocation="
 	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
 	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
 	http://stix.mitre.org/ThreatActor-1 http://stix.mitre.org/XMLSchema/threat_actor/1.1.1/threat_actor.xsd
 	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
@@ -21,16 +25,16 @@
 	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd
 	urn:oasis:names:tc:ciq:xal:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xAL.xsd
 	urn:oasis:names:tc:ciq:xnl:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xNL.xsd
-	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-a02faf43-a2f7-4741-8d92-a78c108e5e04" version="1.1.1" timestamp="2014-02-17T22:10:00+00:00">
+	urn:oasis:names:tc:ciq:xpil:3 http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd" id="example:Package-448aa5d7-7130-49ef-bcbd-5cdd65fd6e70" version="1.1.1" timestamp="2014-02-17T22:10:00+00:00">
     <stix:Incidents>
-        <stix:Incident id="example:incident-91a0e2d7-117c-40db-ae3c-cb9ee2835b01" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType' version="1.1.1">
+        <stix:Incident id="example:incident-b5ffb76d-2d5c-4688-9008-97a06cd30119" timestamp="2014-05-10T00:58:19+00:00" xsi:type='incident:IncidentType'>
             <incident:Title>When BKK Health, the largest with 1.5 million policyholders German company health insurance, gave it a report by the TV magazine "contrasts", according to a security leak. Perhaps highly sensitive medical data had fallen into the hands of unauthorized persons, reports "contrasts" in his article, which was to be aired on ARD on Thursday night. The Federal Data Protection Commissioner Peter Schaar was shocked. A spokesman for the BKK Health Fund said on Thursday upon request, the company being blackmailed.  According to research of the TV magazine, the health insurance had entrusted an external company with the care of their telephone hotline. These have hired a subcontractor, the unskilled assistants instructed. The assistants had with private computers or laptops retrieve data such as medical diagnoses and save. The Data Protection Commissioner Peter Schaar told the magazine, with the health insurance much is manifestly been missed when personal data protection. One such flippancy about social data has not yet happened to him. Schaar described the process as "scandalous".  The BKK health fund has turned the prosecution claims to be. An unknown man had offered last week by phone not concrete documents designated for sale, said a spokesman for the health insurance. The man had threatened to publish the documents. The BKK health fund did not address it. How much money the stranger asks for the documents is not known.  Whether data gets into the wrong hands, currently it is not proved. However, having the health insurance company, which was entrusted with the care of the telephone hotline, deprived of access to their computers on Tuesday. The Federal Ministry of Health, the Federal Privacy Commissioner and the Federal Insurance Office had been informed. Because of the extortion attempt has already filed a complaint against persons unknown, according to BKK. </incident:Title>
             <incident:External_ID source="VERIS">DBAE87C5-B8F4-4921-82C7-1048B6A35BF5</incident:External_ID>
             <incident:Time>
                 <incident:Initial_Compromise precision="year">2010-01-01T00:00:00</incident:Initial_Compromise>
             </incident:Time>
             <incident:Reporter>
-                <stixCommon:Identity id="example:Identity-8e665eb8-064e-446b-9071-ae5233d4f173" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+                <stixCommon:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                     <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">swidup</xnl:NameLine>
@@ -38,7 +42,7 @@
 </ExtSch:Specification>
                 </stixCommon:Identity>
             </incident:Reporter>
-            <incident:Victim id="example:Identity-f30f52dd-5015-40f8-8720-2db25404f551" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <incident:Victim xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:PartyName xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xnl:NameLine xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">BKK Health</xnl:NameLine>
@@ -73,13 +77,13 @@
             </incident:Impact_Assessment>
             <incident:Attributed_Threat_Actors>
                 <incident:Threat_Actor>
-                    <stixCommon:Threat_Actor idref="example:threatactor-252737fc-88d6-48ac-b365-b4435bb83d20" xsi:type='ta:ThreatActorType' version="1.1.1"/>
+                    <stixCommon:Threat_Actor idref="example:threatactor-7d7c0d86-0615-4808-9b58-8c7e2ddbdaff" xsi:type='ta:ThreatActorType'/>
                 </incident:Threat_Actor>
             </incident:Attributed_Threat_Actors>
             <incident:Security_Compromise xsi:type="stixVocabs:SecurityCompromiseVocab-1.0">Yes</incident:Security_Compromise>
             <incident:Discovery_Method xsi:type="stixVocabs:DiscoveryMethodVocab-1.0">Customer</incident:Discovery_Method>
             <incident:Information_Source>
-                <stixCommon:Identity id="example:Identity-f0bfc041-38d2-4b3f-b18e-a174756f9638">
+                <stixCommon:Identity>
                     <stixCommon:Name>vcdb</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Tools>
@@ -101,9 +105,9 @@
         </stix:Incident>
     </stix:Incidents>
     <stix:Threat_Actors>
-        <stix:Threat_Actor id="example:threatactor-252737fc-88d6-48ac-b365-b4435bb83d20" timestamp="2014-06-30T18:08:28.870000+00:00" xsi:type='ta:ThreatActorType' version="1.1.1">
+        <stix:Threat_Actor id="example:threatactor-7d7c0d86-0615-4808-9b58-8c7e2ddbdaff" timestamp="2014-12-22T16:35:19.338000+00:00" xsi:type='ta:ThreatActorType'>
             <ta:Description>Notes:  The partner subcontracted the work to another party.  None are named.</ta:Description>
-            <ta:Identity id="example:Identity-5569d852-41a7-4fff-a8a4-ee4f60d96349" xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
+            <ta:Identity xsi:type='stix-ciqidentity:CIQIdentity3.0InstanceType'>
                 <ExtSch:Specification xmlns:ExtSch="http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1">
   <xpil:Addresses xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3">
     <xpil:Address>
@@ -114,7 +118,7 @@
   </xpil:Addresses>
 </ExtSch:Specification>
             </ta:Identity>
-            <ta:Motivation timestamp="2014-06-30T18:08:28.870000+00:00">
+            <ta:Motivation timestamp="2014-12-22T16:35:19.338000+00:00">
                 <stixCommon:Value xsi:type="stixVocabs:MotivationVocab-1.1">Financial or Economic</stixCommon:Value>
             </ta:Motivation>
         </stix:Threat_Actor>
