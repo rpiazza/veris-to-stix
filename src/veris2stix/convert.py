@@ -11,7 +11,7 @@ import argparse
 import dateutil
 from xml.sax.saxutils import escape
 
-from stix.campaign import (Campaign)
+from stix.campaign import (Campaign, Names)
 from stix.coa import (CourseOfAction)
 from stix.common import (Statement, Confidence, InformationSource, RelatedThreatActor, DateTimeWithPrecision, Identity)
 from stix.common.related import (RelatedTTP, RelatedExploitTarget)
@@ -496,7 +496,8 @@ def add_asset_item(asset_item, attribute_item, incident):
             
 def add_campaign_item(campaign_id_item, pkg):
     campaign = Campaign()
-    campaign.names = VocabString(campaign_id_item)
+    campaign.names = Names()
+    campaign.names.append(VocabString(campaign_id_item))
     pkg.add_campaign(campaign)
 
 def add_confidence_item(confidence_item, incident):
